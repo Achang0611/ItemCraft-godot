@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=3 uid="uid://d2uehm8xi422v"]
+
+[ext_resource type="Script" path="res://scripts/item_selector.gd" id="1_5cq13"]
+
+[node name="ItemSelector" type="PanelContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5cq13")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="SearchBar" type="LineEdit" parent="VBoxContainer"]
+layout_mode = 2
+placeholder_text = "Search"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Items" type="HFlowContainer" parent="VBoxContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[connection signal="text_changed" from="VBoxContainer/SearchBar" to="." method="search"]

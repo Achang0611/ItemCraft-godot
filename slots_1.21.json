@@ -1,0 +1,74 @@
+{
+   "Any":{
+	  "id":"any",
+	  "equivalent":[
+		 "Armor",
+		 "Hand",
+		 "Main Hand",
+		 "Off Hand",
+		 "Head",
+		 "Chest",
+		 "Leggings",
+		 "Feet",
+		 "Body"
+	  ]
+   },
+   "Armor":{
+	  "id":"armor",
+	  "equivalent":[
+		 "Head",
+		 "Chest",
+		 "Leggings",
+		 "Feet"
+	  ]
+   },
+   "Hand":{
+	  "id":"hand",
+	  "equivalent":[
+		 "Main Hand",
+		 "Off Hand",
+	  ]
+   },
+   "Main Hand":{
+	  "id":"mainhand",
+	  "equivalent":[
+		 
+	  ]
+   },
+   "Off Hand":{
+	  "id":"offhand",
+	  "equivalent":[
+		 
+	  ]
+   },
+   "Head":{
+	  "id":"head",
+	  "equivalent":[
+		 
+	  ]
+   },
+   "Chest":{
+	  "id":"chest",
+	  "equivalent":[
+		 
+	  ]
+   },
+   "Leggings":{
+	  "id":"legs",
+	  "equivalent":[
+		 
+	  ]
+   },
+   "Feet":{
+	  "id":"feet",
+	  "equivalent":[
+		 
+	  ]
+   },
+   "Body":{
+	  "id":"body",
+	  "equivalent":[
+		 
+	  ]
+   }
+}

@@ -1,0 +1,11 @@
+{
+   "Number":{
+	  "id":"add_value"
+   },
+   "Scalar":{
+	  "id":"add_multiplied_base"
+   },
+   "Scale":{
+	  "id":"add_multiplied_total"
+   }
+}

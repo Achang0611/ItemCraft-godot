@@ -1,0 +1,97 @@
+[gd_scene load_steps=4 format=3 uid="uid://bimh4wgw2rla5"]
+
+[ext_resource type="Script" path="res://scripts/enchantment_generator.gd" id="1_dk7k2"]
+[ext_resource type="Script" path="res://scripts/enchantment.gd" id="2_o1mo1"]
+
+[sub_resource type="GDScript" id="GDScript_24n41"]
+script/source = "extends VBoxContainer
+
+@onready var category_template: VBoxContainer = $\"../AllCategorysTemplate/CategoryTemplate\"
+@onready var enchantment_template: PanelContainer = $\"../AllCategorysTemplate/CategoryTemplate/Enchantments/EnchantmentTemplate\"
+var label_path = \"CategoryLabel\"
+var enchantments_path = \"Enchantments\"
+var template_path = \"Enchantments/EnchantmentTemplate\"
+
+func get_category(name: String) -> Control:
+	var category
+	if not get_node(name):
+		category = category_template.duplicate()
+		category.name = name
+		category.get_node(label_path).text = name
+		category.get_node(template_path).queue_free()
+		add_child(category)
+	category = get_node(name)
+	
+	return category
+
+func add_enchantment(category_name: String, node: Node) -> void:
+	var category = get_category(category_name)
+	category.get_node(enchantments_path).add_child(node)
+"
+
+[node name="EnchantmentGenerator" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 1
+script = ExtResource("1_dk7k2")
+
+[node name="AllCategorys" type="VBoxContainer" parent="."]
+layout_mode = 2
+offset_right = 1280.0
+offset_bottom = 720.0
+script = SubResource("GDScript_24n41")
+
+[node name="AllCategorysTemplate" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CategoryTemplate" type="VBoxContainer" parent="AllCategorysTemplate"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CategoryLabel" type="Label" parent="AllCategorysTemplate/CategoryTemplate"]
+layout_mode = 2
+text = "Test"
+horizontal_alignment = 1
+
+[node name="Enchantments" type="GridContainer" parent="AllCategorysTemplate/CategoryTemplate"]
+layout_mode = 2
+columns = 3
+
+[node name="EnchantmentTemplate" type="PanelContainer" parent="AllCategorysTemplate/CategoryTemplate/Enchantments"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("2_o1mo1")
+
+[node name="MarginContainer" type="MarginContainer" parent="AllCategorysTemplate/CategoryTemplate/Enchantments/EnchantmentTemplate"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AllCategorysTemplate/CategoryTemplate/Enchantments/EnchantmentTemplate/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="AllCategorysTemplate/CategoryTemplate/Enchantments/EnchantmentTemplate/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Enchant"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="AllCategorysTemplate/CategoryTemplate/Enchantments/EnchantmentTemplate/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 255.0
+alignment = 1
+
+[connection signal="value_changed" from="AllCategorysTemplate/CategoryTemplate/Enchantments/EnchantmentTemplate/MarginContainer/VBoxContainer/SpinBox" to="AllCategorysTemplate/CategoryTemplate/Enchantments/EnchantmentTemplate" method="_on_spin_box_value_changed"]

@@ -1,0 +1,47 @@
+[gd_scene load_steps=2 format=3 uid="uid://dt8ydm7h5sopf"]
+
+[ext_resource type="Script" path="res://scripts/attribute_editor.gd" id="1_482tp"]
+
+[node name="AttributeEditor" type="VBoxContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_482tp")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HideAttributeCheck" type="CheckButton" parent="HBoxContainer/CenterContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Hide Attribute Modifier"
+alignment = 1
+
+[node name="ClearButton" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+text = "Clear All"
+
+[node name="HSeparator" type="HSeparator" parent="."]
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="AttributeModifiers" type="VBoxContainer" parent="ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="AddModifier" type="Button" parent="."]
+layout_mode = 2
+text = "+"
+
+[connection signal="toggled" from="HBoxContainer/CenterContainer/HideAttributeCheck" to="." method="_on_hide_attribute_check_toggled"]
+[connection signal="pressed" from="HBoxContainer/ClearButton" to="." method="_on_clear_button_pressed"]
+[connection signal="pressed" from="AddModifier" to="." method="_on_add_modifier_pressed"]

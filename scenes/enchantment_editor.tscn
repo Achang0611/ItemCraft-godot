@@ -1,0 +1,50 @@
+[gd_scene load_steps=3 format=3 uid="uid://dn1k36p0le431"]
+
+[ext_resource type="Script" path="res://scripts/enchantment_editor.gd" id="1_ndxbk"]
+[ext_resource type="PackedScene" uid="uid://chhq0t0blg18a" path="res://scenes/Enchantments_1_21.tscn" id="2_4r12x"]
+
+[node name="VBoxContainer" type="VBoxContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ndxbk")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="LooksEnchantedCheck" type="CheckButton" parent="HBoxContainer/CenterContainer"]
+layout_mode = 2
+text = "Looks Enchanted"
+
+[node name="CenterContainer2" type="CenterContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HideEnchantCheck" type="CheckButton" parent="HBoxContainer/CenterContainer2"]
+layout_mode = 2
+text = "Hide Enchantment"
+
+[node name="CenterContainer3" type="CenterContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ClearButton" type="Button" parent="HBoxContainer/CenterContainer3"]
+layout_mode = 2
+text = "Clear All"
+
+[node name="HSeparator" type="HSeparator" parent="."]
+layout_mode = 2
+
+[node name="ScrollContainer" parent="." instance=ExtResource("2_4r12x")]
+layout_mode = 2
+size_flags_vertical = 3
+
+[connection signal="toggled" from="HBoxContainer/CenterContainer/LooksEnchantedCheck" to="." method="_on_looks_enchanted_check_toggled"]
+[connection signal="toggled" from="HBoxContainer/CenterContainer2/HideEnchantCheck" to="." method="_on_hide_enchant_check_toggled"]
+[connection signal="pressed" from="HBoxContainer/CenterContainer3/ClearButton" to="." method="_on_clear_button_pressed"]

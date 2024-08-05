@@ -1,0 +1,59 @@
+[gd_scene load_steps=5 format=3 uid="uid://x03jwmlhturj"]
+
+[ext_resource type="Script" path="res://scripts/block.gd" id="1_jugrs"]
+[ext_resource type="Texture2D" uid="uid://dlk5j6ik82jt8" path="res://trash-can-solid.svg" id="2_r40ys"]
+[ext_resource type="Texture2D" uid="uid://ddyv1i0wgyi7u" path="res://items_1.21/cobblestone.png" id="2_wkleh"]
+[ext_resource type="PackedScene" uid="uid://d2uehm8xi422v" path="res://scenes/item_selector.tscn" id="4_vwfj5"]
+
+[node name="Block" type="PanelContainer"]
+offset_right = 913.0
+offset_bottom = 92.0
+script = ExtResource("1_jugrs")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="ItemContainer" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/ItemContainer"]
+layout_mode = 2
+
+[node name="ItemTexture" type="TextureRect" parent="VBoxContainer/ItemContainer/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("2_wkleh")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="ItemName" type="Label" parent="VBoxContainer/ItemContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 42
+text = "Cobblestone"
+horizontal_alignment = 1
+
+[node name="Delete" type="Button" parent="VBoxContainer/ItemContainer/HBoxContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+size_flags_vertical = 4
+icon = ExtResource("2_r40ys")
+icon_alignment = 1
+expand_icon = true
+
+[node name="ItemSelector" parent="VBoxContainer" instance=ExtResource("4_vwfj5")]
+visible = false
+custom_minimum_size = Vector2(0, 540)
+layout_mode = 2
+
+[node name="MouseCheck" type="Timer" parent="."]
+wait_time = 0.05
+
+[connection signal="gui_input" from="VBoxContainer/ItemContainer" to="." method="_on_margin_container_gui_input"]
+[connection signal="pressed" from="VBoxContainer/ItemContainer/HBoxContainer/Delete" to="." method="_on_button_pressed"]
+[connection signal="hover" from="VBoxContainer/ItemSelector" to="." method="show_item"]
+[connection signal="select" from="VBoxContainer/ItemSelector" to="." method="_on_item_selector_select"]
+[connection signal="timeout" from="MouseCheck" to="." method="_on_mouse_check_timeout"]

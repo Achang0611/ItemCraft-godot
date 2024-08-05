@@ -1,0 +1,94 @@
+[gd_scene load_steps=10 format=3 uid="uid://c3due2y2wg3aa"]
+
+[ext_resource type="PackedScene" uid="uid://d2uehm8xi422v" path="res://scenes/item_selector.tscn" id="1_uencb"]
+[ext_resource type="Script" path="res://scripts/item_editor.gd" id="3_6hmie"]
+[ext_resource type="Texture2D" uid="uid://di7k82u8yjdpi" path="res://items_1.21/acacia_boat.png" id="4_2na5r"]
+[ext_resource type="Script" path="res://scripts/command_text.gd" id="5_drmeu"]
+[ext_resource type="PackedScene" uid="uid://d33mamgmk24jj" path="res://scenes/infomation_editor.tscn" id="5_lnjvh"]
+[ext_resource type="PackedScene" uid="uid://dt8ydm7h5sopf" path="res://scenes/attribute_editor.tscn" id="7_y4xxt"]
+[ext_resource type="PackedScene" uid="uid://dn1k36p0le431" path="res://scenes/enchantment_editor.tscn" id="8_5j54d"]
+[ext_resource type="PackedScene" uid="uid://cktr1h2w6vvqd" path="res://scenes/interact_editor.tscn" id="8_ihxqc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6kf0c"]
+
+[node name="Main" type="CanvasLayer"]
+
+[node name="ItemEditor" type="PanelContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 2
+script = ExtResource("3_6hmie")
+
+[node name="ItemSelector" parent="ItemEditor" instance=ExtResource("1_uencb")]
+layout_mode = 2
+
+[node name="ItemEdit" type="VBoxContainer" parent="ItemEditor"]
+visible = false
+layout_mode = 2
+focus_mode = 2
+
+[node name="HSeparator" type="HSeparator" parent="ItemEditor/ItemEdit"]
+layout_mode = 2
+theme_override_constants/separation = 10
+theme_override_styles/separator = SubResource("StyleBoxEmpty_6kf0c")
+
+[node name="PanelContainer" type="PanelContainer" parent="ItemEditor/ItemEdit"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="MarginContainer" type="MarginContainer" parent="ItemEditor/ItemEdit/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="ItemButton" type="Button" parent="ItemEditor/ItemEdit/PanelContainer/MarginContainer"]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+icon = ExtResource("4_2na5r")
+icon_alignment = 1
+expand_icon = true
+
+[node name="TabContainer" type="TabContainer" parent="ItemEditor/ItemEdit"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Infomation" parent="ItemEditor/ItemEdit/TabContainer" node_paths=PackedStringArray("editor") instance=ExtResource("5_lnjvh")]
+layout_mode = 2
+editor = NodePath("../../..")
+
+[node name="Enchantment" parent="ItemEditor/ItemEdit/TabContainer" node_paths=PackedStringArray("editor") instance=ExtResource("8_5j54d")]
+visible = false
+layout_mode = 2
+editor = NodePath("../../..")
+
+[node name="Attribute" parent="ItemEditor/ItemEdit/TabContainer" node_paths=PackedStringArray("editor") instance=ExtResource("7_y4xxt")]
+visible = false
+layout_mode = 2
+editor = NodePath("../../..")
+
+[node name="Interact" parent="ItemEditor/ItemEdit/TabContainer" node_paths=PackedStringArray("editor") instance=ExtResource("8_ihxqc")]
+visible = false
+layout_mode = 2
+editor = NodePath("../../..")
+
+[node name="CommandText" type="TextEdit" parent="ItemEditor/ItemEdit"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.15
+tooltip_text = "Click to copy"
+placeholder_text = "Generated command"
+editable = false
+context_menu_enabled = false
+wrap_mode = 1
+autowrap_mode = 1
+script = ExtResource("5_drmeu")
+
+[connection signal="select" from="ItemEditor/ItemSelector" to="ItemEditor" method="select"]
+[connection signal="pressed" from="ItemEditor/ItemEdit/PanelContainer/MarginContainer/ItemButton" to="ItemEditor" method="_on_change_item_pressed"]
+[connection signal="gui_input" from="ItemEditor/ItemEdit/CommandText" to="ItemEditor/ItemEdit/CommandText" method="_on_gui_input"]

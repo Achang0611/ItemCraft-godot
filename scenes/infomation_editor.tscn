@@ -1,0 +1,125 @@
+[gd_scene load_steps=5 format=3 uid="uid://d33mamgmk24jj"]
+
+[ext_resource type="Script" path="res://scripts/entity_selector.gd" id="1_8adqj"]
+[ext_resource type="Script" path="res://scripts/infomation_editor.gd" id="1_ngbbs"]
+
+[sub_resource type="SystemFont" id="SystemFont_2b86j"]
+
+[sub_resource type="Theme" id="Theme_w0dy1"]
+default_font = SubResource("SystemFont_2b86j")
+default_font_size = 32
+
+[node name="Infomation" type="VBoxContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ngbbs")
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.2
+
+[node name="Count" type="SpinBox" parent="HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = SubResource("Theme_w0dy1")
+min_value = 1.0
+max_value = 64.0
+value = 1.0
+alignment = 1
+
+[node name="EntitySelector" type="OptionButton" parent="HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 32
+alignment = 1
+item_count = 7
+selected = 3
+popup/item_0/text = "@a"
+popup/item_0/id = 0
+popup/item_1/text = "@e"
+popup/item_1/id = 1
+popup/item_2/text = "@n"
+popup/item_2/id = 2
+popup/item_3/text = "@p"
+popup/item_3/id = 3
+popup/item_4/text = "@r"
+popup/item_4/id = 4
+popup/item_5/text = "@s"
+popup/item_5/id = 5
+popup/item_6/text = "Name"
+popup/item_6/id = 6
+script = ExtResource("1_8adqj")
+
+[node name="PlayerName" type="LineEdit" parent="HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 32
+placeholder_text = "Player name"
+alignment = 1
+editable = false
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.2
+
+[node name="CustomName" type="LineEdit" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Custom name"
+alignment = 1
+max_length = 55
+context_menu_enabled = false
+
+[node name="PanelContainer" type="PanelContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="RichCustomName" type="RichTextLabel" parent="HBoxContainer/PanelContainer"]
+clip_contents = false
+layout_mode = 2
+size_flags_vertical = 4
+bbcode_enabled = true
+fit_content = true
+visible_characters = 55
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Lore" type="TextEdit" parent="HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/line_spacing = 0
+placeholder_text = "Lore"
+context_menu_enabled = false
+
+[node name="ScrollContainer" type="ScrollContainer" parent="HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PanelContainer" type="PanelContainer" parent="HBoxContainer2/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="RichLore" type="RichTextLabel" parent="HBoxContainer2/ScrollContainer/PanelContainer"]
+clip_contents = false
+layout_mode = 2
+mouse_filter = 2
+bbcode_enabled = true
+fit_content = true
+autowrap_mode = 0
+
+[connection signal="value_changed" from="HBoxContainer3/Count" to="." method="_on_count_value_changed"]
+[connection signal="item_selected" from="HBoxContainer3/EntitySelector" to="HBoxContainer3/EntitySelector" method="_on_item_selected"]
+[connection signal="value_changed" from="HBoxContainer3/EntitySelector" to="." method="_on_entity_selector_value_changed"]
+[connection signal="gui_input" from="HBoxContainer3/PlayerName" to="HBoxContainer3/EntitySelector" method="_on_player_name_gui_input"]
+[connection signal="text_changed" from="HBoxContainer3/PlayerName" to="HBoxContainer3/EntitySelector" method="_on_player_name_text_changed"]
+[connection signal="text_changed" from="HBoxContainer/CustomName" to="." method="_on_custom_name_text_changed"]
+[connection signal="draw" from="HBoxContainer2/Lore" to="HBoxContainer2/Lore" method="_on_draw"]
+[connection signal="text_changed" from="HBoxContainer2/Lore" to="." method="_on_lore_text_changed"]

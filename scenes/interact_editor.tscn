@@ -1,0 +1,48 @@
+[gd_scene load_steps=3 format=3 uid="uid://cktr1h2w6vvqd"]
+
+[ext_resource type="Script" path="res://scripts/interact_editor.gd" id="1_6h8l6"]
+[ext_resource type="PackedScene" uid="uid://dgw6eltakitgw" path="res://scenes/interact_list.tscn" id="2_w8c2h"]
+
+[node name="InteractEditor" type="HBoxContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6h8l6")
+
+[node name="Place" parent="." instance=ExtResource("2_w8c2h")]
+layout_mode = 2
+
+[node name="Label" parent="Place" index="0"]
+text = "Can Place On"
+
+[node name="CopyData" type="VBoxContainer" parent="."]
+layout_mode = 2
+alignment = 1
+
+[node name="CopyToBreak" type="Button" parent="CopyData"]
+layout_mode = 2
+tooltip_text = "Click to copy all Place to Break."
+text = ">>"
+
+[node name="CopyToPlace" type="Button" parent="CopyData"]
+layout_mode = 2
+tooltip_text = "Click to copy all Break to Place."
+text = "<<"
+
+[node name="Break" parent="." instance=ExtResource("2_w8c2h")]
+layout_mode = 2
+
+[node name="Label" parent="Break" index="0"]
+text = "Can Break It"
+
+[connection signal="toggled_tooltip" from="Place" to="." method="_on_place_toggled_tooltip"]
+[connection signal="update" from="Place" to="." method="_on_place_update"]
+[connection signal="pressed" from="CopyData/CopyToBreak" to="." method="_on_copy_to_break_pressed"]
+[connection signal="pressed" from="CopyData/CopyToPlace" to="." method="_on_copy_to_place_pressed"]
+[connection signal="toggled_tooltip" from="Break" to="." method="_on_break_toggled_tooltip"]
+[connection signal="update" from="Break" to="." method="_on_break_update"]
+
+[editable path="Place"]
+[editable path="Break"]

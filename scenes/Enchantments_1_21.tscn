@@ -1,0 +1,1359 @@
+[gd_scene load_steps=2 format=3 uid="uid://chhq0t0blg18a"]
+
+[ext_resource type="Script" path="res://scripts/enchantment.gd" id="1_nv6qp"]
+
+[node name="Enchantments" type="ScrollContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AllCategorys" type="VBoxContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="All applicable" type="VBoxContainer" parent="AllCategorys"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CategoryLabel" type="Label" parent="AllCategorys/All applicable"]
+layout_mode = 2
+text = "All applicable"
+horizontal_alignment = 1
+
+[node name="Enchantments" type="GridContainer" parent="AllCategorys/All applicable"]
+layout_mode = 2
+columns = 3
+
+[node name="Curse of Vanishing" type="PanelContainer" parent="AllCategorys/All applicable/Enchantments" groups=["enchantment"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_nv6qp")
+
+[node name="MarginContainer" type="MarginContainer" parent="AllCategorys/All applicable/Enchantments/Curse of Vanishing"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AllCategorys/All applicable/Enchantments/Curse of Vanishing/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="AllCategorys/All applicable/Enchantments/Curse of Vanishing/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Curse of Vanishing"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="AllCategorys/All applicable/Enchantments/Curse of Vanishing/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 255.0
+alignment = 1
+suffix = "/ 1"
+
+[node name="Mending" type="PanelContainer" parent="AllCategorys/All applicable/Enchantments" groups=["enchantment"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_nv6qp")
+
+[node name="MarginContainer" type="MarginContainer" parent="AllCategorys/All applicable/Enchantments/Mending"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AllCategorys/All applicable/Enchantments/Mending/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="AllCategorys/All applicable/Enchantments/Mending/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Mending"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="AllCategorys/All applicable/Enchantments/Mending/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 255.0
+alignment = 1
+suffix = "/ 1"
+
+[node name="Unbreaking" type="PanelContainer" parent="AllCategorys/All applicable/Enchantments" groups=["enchantment"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_nv6qp")
+
+[node name="MarginContainer" type="MarginContainer" parent="AllCategorys/All applicable/Enchantments/Unbreaking"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AllCategorys/All applicable/Enchantments/Unbreaking/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="AllCategorys/All applicable/Enchantments/Unbreaking/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Unbreaking"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="AllCategorys/All applicable/Enchantments/Unbreaking/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 255.0
+alignment = 1
+suffix = "/ 3"
+
+[node name="Armor" type="VBoxContainer" parent="AllCategorys"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CategoryLabel" type="Label" parent="AllCategorys/Armor"]
+layout_mode = 2
+text = "Armor"
+horizontal_alignment = 1
+
+[node name="Enchantments" type="GridContainer" parent="AllCategorys/Armor"]
+layout_mode = 2
+columns = 3
+
+[node name="Aqua Affinity" type="PanelContainer" parent="AllCategorys/Armor/Enchantments" groups=["enchantment"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_nv6qp")
+
+[node name="MarginContainer" type="MarginContainer" parent="AllCategorys/Armor/Enchantments/Aqua Affinity"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AllCategorys/Armor/Enchantments/Aqua Affinity/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="AllCategorys/Armor/Enchantments/Aqua Affinity/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Aqua Affinity"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="AllCategorys/Armor/Enchantments/Aqua Affinity/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 255.0
+alignment = 1
+suffix = "/ 1"
+
+[node name="Blast Protection" type="PanelContainer" parent="AllCategorys/Armor/Enchantments" groups=["enchantment"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_nv6qp")
+
+[node name="MarginContainer" type="MarginContainer" parent="AllCategorys/Armor/Enchantments/Blast Protection"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AllCategorys/Armor/Enchantments/Blast Protection/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="AllCategorys/Armor/Enchantments/Blast Protection/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Blast Protection"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="AllCategorys/Armor/Enchantments/Blast Protection/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 255.0
+alignment = 1
+suffix = "/ 4"
+
+[node name="Curse of Binding" type="PanelContainer" parent="AllCategorys/Armor/Enchantments" groups=["enchantment"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_nv6qp")
+
+[node name="MarginContainer" type="MarginContainer" parent="AllCategorys/Armor/Enchantments/Curse of Binding"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AllCategorys/Armor/Enchantments/Curse of Binding/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="AllCategorys/Armor/Enchantments/Curse of Binding/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Curse of Binding"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="AllCategorys/Armor/Enchantments/Curse of Binding/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 255.0
+alignment = 1
+suffix = "/ 1"
+
+[node name="Depth Strider" type="PanelContainer" parent="AllCategorys/Armor/Enchantments" groups=["enchantment"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_nv6qp")
+
+[node name="MarginContainer" type="MarginContainer" parent="AllCategorys/Armor/Enchantments/Depth Strider"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AllCategorys/Armor/Enchantments/Depth Strider/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="AllCategorys/Armor/Enchantments/Depth Strider/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Depth Strider"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="AllCategorys/Armor/Enchantments/Depth Strider/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 255.0
+alignment = 1
+suffix = "/ 3"
+
+[node name="Feather Falling" type="PanelContainer" parent="AllCategorys/Armor/Enchantments" groups=["enchantment"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_nv6qp")
+
+[node name="MarginContainer" type="MarginContainer" parent="AllCategorys/Armor/Enchantments/Feather Falling"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AllCategorys/Armor/Enchantments/Feather Falling/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="AllCategorys/Armor/Enchantments/Feather Falling/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Feather Falling"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="AllCategorys/Armor/Enchantments/Feather Falling/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 255.0
+alignment = 1
+suffix = "/ 4"
+
+[node name="Fire Protection" type="PanelContainer" parent="AllCategorys/Armor/Enchantments" groups=["enchantment"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_nv6qp")
+
+[node name="MarginContainer" type="MarginContainer" parent="AllCategorys/Armor/Enchantments/Fire Protection"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AllCategorys/Armor/Enchantments/Fire Protection/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="AllCategorys/Armor/Enchantments/Fire Protection/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Fire Protection"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="AllCategorys/Armor/Enchantments/Fire Protection/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 255.0
+alignment = 1
+suffix = "/ 4"
+
+[node name="Frost Walker" type="PanelContainer" parent="AllCategorys/Armor/Enchantments" groups=["enchantment"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_nv6qp")
+
+[node name="MarginContainer" type="MarginContainer" parent="AllCategorys/Armor/Enchantments/Frost Walker"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AllCategorys/Armor/Enchantments/Frost Walker/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="AllCategorys/Armor/Enchantments/Frost Walker/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Frost Walker"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="AllCategorys/Armor/Enchantments/Frost Walker/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 255.0
+alignment = 1
+suffix = "/ 2"
+
+[node name="Projectile Protection" type="PanelContainer" parent="AllCategorys/Armor/Enchantments" groups=["enchantment"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_nv6qp")
+
+[node name="MarginContainer" type="MarginContainer" parent="AllCategorys/Armor/Enchantments/Projectile Protection"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AllCategorys/Armor/Enchantments/Projectile Protection/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="AllCategorys/Armor/Enchantments/Projectile Protection/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Projectile Protection"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="AllCategorys/Armor/Enchantments/Projectile Protection/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 255.0
+alignment = 1
+suffix = "/ 4"
+
+[node name="Protection" type="PanelContainer" parent="AllCategorys/Armor/Enchantments" groups=["enchantment"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_nv6qp")
+
+[node name="MarginContainer" type="MarginContainer" parent="AllCategorys/Armor/Enchantments/Protection"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AllCategorys/Armor/Enchantments/Protection/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="AllCategorys/Armor/Enchantments/Protection/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Protection"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="AllCategorys/Armor/Enchantments/Protection/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 255.0
+alignment = 1
+suffix = "/ 4"
+
+[node name="Respiration" type="PanelContainer" parent="AllCategorys/Armor/Enchantments" groups=["enchantment"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_nv6qp")
+
+[node name="MarginContainer" type="MarginContainer" parent="AllCategorys/Armor/Enchantments/Respiration"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AllCategorys/Armor/Enchantments/Respiration/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="AllCategorys/Armor/Enchantments/Respiration/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Respiration"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="AllCategorys/Armor/Enchantments/Respiration/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 255.0
+alignment = 1
+suffix = "/ 3"
+
+[node name="Soul Speed" type="PanelContainer" parent="AllCategorys/Armor/Enchantments" groups=["enchantment"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_nv6qp")
+
+[node name="MarginContainer" type="MarginContainer" parent="AllCategorys/Armor/Enchantments/Soul Speed"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AllCategorys/Armor/Enchantments/Soul Speed/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="AllCategorys/Armor/Enchantments/Soul Speed/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Soul Speed"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="AllCategorys/Armor/Enchantments/Soul Speed/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 255.0
+alignment = 1
+suffix = "/ 3"
+
+[node name="Swift Sneak" type="PanelContainer" parent="AllCategorys/Armor/Enchantments" groups=["enchantment"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_nv6qp")
+
+[node name="MarginContainer" type="MarginContainer" parent="AllCategorys/Armor/Enchantments/Swift Sneak"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AllCategorys/Armor/Enchantments/Swift Sneak/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="AllCategorys/Armor/Enchantments/Swift Sneak/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Swift Sneak"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="AllCategorys/Armor/Enchantments/Swift Sneak/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 255.0
+alignment = 1
+suffix = "/ 3"
+
+[node name="Thorns" type="PanelContainer" parent="AllCategorys/Armor/Enchantments" groups=["enchantment"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_nv6qp")
+
+[node name="MarginContainer" type="MarginContainer" parent="AllCategorys/Armor/Enchantments/Thorns"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AllCategorys/Armor/Enchantments/Thorns/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="AllCategorys/Armor/Enchantments/Thorns/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Thorns"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="AllCategorys/Armor/Enchantments/Thorns/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 255.0
+alignment = 1
+suffix = "/ 3"
+
+[node name="Bow" type="VBoxContainer" parent="AllCategorys"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CategoryLabel" type="Label" parent="AllCategorys/Bow"]
+layout_mode = 2
+text = "Bow"
+horizontal_alignment = 1
+
+[node name="Enchantments" type="GridContainer" parent="AllCategorys/Bow"]
+layout_mode = 2
+columns = 3
+
+[node name="Flame" type="PanelContainer" parent="AllCategorys/Bow/Enchantments" groups=["enchantment"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_nv6qp")
+
+[node name="MarginContainer" type="MarginContainer" parent="AllCategorys/Bow/Enchantments/Flame"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AllCategorys/Bow/Enchantments/Flame/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="AllCategorys/Bow/Enchantments/Flame/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Flame"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="AllCategorys/Bow/Enchantments/Flame/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 255.0
+alignment = 1
+suffix = "/ 1"
+
+[node name="Infinity" type="PanelContainer" parent="AllCategorys/Bow/Enchantments" groups=["enchantment"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_nv6qp")
+
+[node name="MarginContainer" type="MarginContainer" parent="AllCategorys/Bow/Enchantments/Infinity"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AllCategorys/Bow/Enchantments/Infinity/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="AllCategorys/Bow/Enchantments/Infinity/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Infinity"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="AllCategorys/Bow/Enchantments/Infinity/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 255.0
+alignment = 1
+suffix = "/ 1"
+
+[node name="Power" type="PanelContainer" parent="AllCategorys/Bow/Enchantments" groups=["enchantment"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_nv6qp")
+
+[node name="MarginContainer" type="MarginContainer" parent="AllCategorys/Bow/Enchantments/Power"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AllCategorys/Bow/Enchantments/Power/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="AllCategorys/Bow/Enchantments/Power/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Power"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="AllCategorys/Bow/Enchantments/Power/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 255.0
+alignment = 1
+suffix = "/ 5"
+
+[node name="Punch" type="PanelContainer" parent="AllCategorys/Bow/Enchantments" groups=["enchantment"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_nv6qp")
+
+[node name="MarginContainer" type="MarginContainer" parent="AllCategorys/Bow/Enchantments/Punch"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AllCategorys/Bow/Enchantments/Punch/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="AllCategorys/Bow/Enchantments/Punch/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Punch"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="AllCategorys/Bow/Enchantments/Punch/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 255.0
+alignment = 1
+suffix = "/ 2"
+
+[node name="Crossbow" type="VBoxContainer" parent="AllCategorys"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CategoryLabel" type="Label" parent="AllCategorys/Crossbow"]
+layout_mode = 2
+text = "Crossbow"
+horizontal_alignment = 1
+
+[node name="Enchantments" type="GridContainer" parent="AllCategorys/Crossbow"]
+layout_mode = 2
+columns = 3
+
+[node name="Multishot" type="PanelContainer" parent="AllCategorys/Crossbow/Enchantments" groups=["enchantment"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_nv6qp")
+
+[node name="MarginContainer" type="MarginContainer" parent="AllCategorys/Crossbow/Enchantments/Multishot"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AllCategorys/Crossbow/Enchantments/Multishot/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="AllCategorys/Crossbow/Enchantments/Multishot/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Multishot"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="AllCategorys/Crossbow/Enchantments/Multishot/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 255.0
+alignment = 1
+suffix = "/ 1"
+
+[node name="Piercing" type="PanelContainer" parent="AllCategorys/Crossbow/Enchantments" groups=["enchantment"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_nv6qp")
+
+[node name="MarginContainer" type="MarginContainer" parent="AllCategorys/Crossbow/Enchantments/Piercing"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AllCategorys/Crossbow/Enchantments/Piercing/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="AllCategorys/Crossbow/Enchantments/Piercing/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Piercing"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="AllCategorys/Crossbow/Enchantments/Piercing/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 255.0
+alignment = 1
+suffix = "/ 4"
+
+[node name="Quick Charge" type="PanelContainer" parent="AllCategorys/Crossbow/Enchantments" groups=["enchantment"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_nv6qp")
+
+[node name="MarginContainer" type="MarginContainer" parent="AllCategorys/Crossbow/Enchantments/Quick Charge"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AllCategorys/Crossbow/Enchantments/Quick Charge/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="AllCategorys/Crossbow/Enchantments/Quick Charge/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Quick Charge"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="AllCategorys/Crossbow/Enchantments/Quick Charge/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 255.0
+alignment = 1
+suffix = "/ 3"
+
+[node name="Fishing rod" type="VBoxContainer" parent="AllCategorys"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CategoryLabel" type="Label" parent="AllCategorys/Fishing rod"]
+layout_mode = 2
+text = "Fishing rod"
+horizontal_alignment = 1
+
+[node name="Enchantments" type="GridContainer" parent="AllCategorys/Fishing rod"]
+layout_mode = 2
+columns = 3
+
+[node name="Luck of the Sea" type="PanelContainer" parent="AllCategorys/Fishing rod/Enchantments" groups=["enchantment"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_nv6qp")
+
+[node name="MarginContainer" type="MarginContainer" parent="AllCategorys/Fishing rod/Enchantments/Luck of the Sea"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AllCategorys/Fishing rod/Enchantments/Luck of the Sea/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="AllCategorys/Fishing rod/Enchantments/Luck of the Sea/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Luck of the Sea"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="AllCategorys/Fishing rod/Enchantments/Luck of the Sea/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 255.0
+alignment = 1
+suffix = "/ 3"
+
+[node name="Lure" type="PanelContainer" parent="AllCategorys/Fishing rod/Enchantments" groups=["enchantment"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_nv6qp")
+
+[node name="MarginContainer" type="MarginContainer" parent="AllCategorys/Fishing rod/Enchantments/Lure"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AllCategorys/Fishing rod/Enchantments/Lure/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="AllCategorys/Fishing rod/Enchantments/Lure/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Lure"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="AllCategorys/Fishing rod/Enchantments/Lure/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 255.0
+alignment = 1
+suffix = "/ 3"
+
+[node name="Mace" type="VBoxContainer" parent="AllCategorys"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CategoryLabel" type="Label" parent="AllCategorys/Mace"]
+layout_mode = 2
+text = "Mace"
+horizontal_alignment = 1
+
+[node name="Enchantments" type="GridContainer" parent="AllCategorys/Mace"]
+layout_mode = 2
+columns = 3
+
+[node name="Breach" type="PanelContainer" parent="AllCategorys/Mace/Enchantments" groups=["enchantment"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_nv6qp")
+
+[node name="MarginContainer" type="MarginContainer" parent="AllCategorys/Mace/Enchantments/Breach"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AllCategorys/Mace/Enchantments/Breach/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="AllCategorys/Mace/Enchantments/Breach/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Breach"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="AllCategorys/Mace/Enchantments/Breach/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 255.0
+alignment = 1
+suffix = "/ 4"
+
+[node name="Density" type="PanelContainer" parent="AllCategorys/Mace/Enchantments" groups=["enchantment"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_nv6qp")
+
+[node name="MarginContainer" type="MarginContainer" parent="AllCategorys/Mace/Enchantments/Density"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AllCategorys/Mace/Enchantments/Density/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="AllCategorys/Mace/Enchantments/Density/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Density"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="AllCategorys/Mace/Enchantments/Density/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 255.0
+alignment = 1
+suffix = "/ 5"
+
+[node name="Wind Burst" type="PanelContainer" parent="AllCategorys/Mace/Enchantments" groups=["enchantment"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_nv6qp")
+
+[node name="MarginContainer" type="MarginContainer" parent="AllCategorys/Mace/Enchantments/Wind Burst"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AllCategorys/Mace/Enchantments/Wind Burst/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="AllCategorys/Mace/Enchantments/Wind Burst/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Wind Burst"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="AllCategorys/Mace/Enchantments/Wind Burst/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 255.0
+alignment = 1
+suffix = "/ 3"
+
+[node name="Pickaxe Shovel Axe Hoe Shears" type="VBoxContainer" parent="AllCategorys"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CategoryLabel" type="Label" parent="AllCategorys/Pickaxe Shovel Axe Hoe Shears"]
+layout_mode = 2
+text = "Pickaxe Shovel Axe Hoe Shears"
+horizontal_alignment = 1
+
+[node name="Enchantments" type="GridContainer" parent="AllCategorys/Pickaxe Shovel Axe Hoe Shears"]
+layout_mode = 2
+columns = 3
+
+[node name="Efficiency" type="PanelContainer" parent="AllCategorys/Pickaxe Shovel Axe Hoe Shears/Enchantments" groups=["enchantment"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_nv6qp")
+
+[node name="MarginContainer" type="MarginContainer" parent="AllCategorys/Pickaxe Shovel Axe Hoe Shears/Enchantments/Efficiency"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AllCategorys/Pickaxe Shovel Axe Hoe Shears/Enchantments/Efficiency/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="AllCategorys/Pickaxe Shovel Axe Hoe Shears/Enchantments/Efficiency/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Efficiency"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="AllCategorys/Pickaxe Shovel Axe Hoe Shears/Enchantments/Efficiency/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 255.0
+alignment = 1
+suffix = "/ 5"
+
+[node name="Fortune" type="PanelContainer" parent="AllCategorys/Pickaxe Shovel Axe Hoe Shears/Enchantments" groups=["enchantment"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_nv6qp")
+
+[node name="MarginContainer" type="MarginContainer" parent="AllCategorys/Pickaxe Shovel Axe Hoe Shears/Enchantments/Fortune"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AllCategorys/Pickaxe Shovel Axe Hoe Shears/Enchantments/Fortune/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="AllCategorys/Pickaxe Shovel Axe Hoe Shears/Enchantments/Fortune/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Fortune"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="AllCategorys/Pickaxe Shovel Axe Hoe Shears/Enchantments/Fortune/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 255.0
+alignment = 1
+suffix = "/ 3"
+
+[node name="Silk Touch" type="PanelContainer" parent="AllCategorys/Pickaxe Shovel Axe Hoe Shears/Enchantments" groups=["enchantment"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_nv6qp")
+
+[node name="MarginContainer" type="MarginContainer" parent="AllCategorys/Pickaxe Shovel Axe Hoe Shears/Enchantments/Silk Touch"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AllCategorys/Pickaxe Shovel Axe Hoe Shears/Enchantments/Silk Touch/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="AllCategorys/Pickaxe Shovel Axe Hoe Shears/Enchantments/Silk Touch/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Silk Touch"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="AllCategorys/Pickaxe Shovel Axe Hoe Shears/Enchantments/Silk Touch/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 255.0
+alignment = 1
+suffix = "/ 1"
+
+[node name="Sword" type="VBoxContainer" parent="AllCategorys"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CategoryLabel" type="Label" parent="AllCategorys/Sword"]
+layout_mode = 2
+text = "Sword"
+horizontal_alignment = 1
+
+[node name="Enchantments" type="GridContainer" parent="AllCategorys/Sword"]
+layout_mode = 2
+columns = 3
+
+[node name="Bane of Arthropods" type="PanelContainer" parent="AllCategorys/Sword/Enchantments" groups=["enchantment"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_nv6qp")
+
+[node name="MarginContainer" type="MarginContainer" parent="AllCategorys/Sword/Enchantments/Bane of Arthropods"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AllCategorys/Sword/Enchantments/Bane of Arthropods/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="AllCategorys/Sword/Enchantments/Bane of Arthropods/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Bane of Arthropods"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="AllCategorys/Sword/Enchantments/Bane of Arthropods/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 255.0
+alignment = 1
+suffix = "/ 5"
+
+[node name="Fire Aspect" type="PanelContainer" parent="AllCategorys/Sword/Enchantments" groups=["enchantment"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_nv6qp")
+
+[node name="MarginContainer" type="MarginContainer" parent="AllCategorys/Sword/Enchantments/Fire Aspect"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AllCategorys/Sword/Enchantments/Fire Aspect/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="AllCategorys/Sword/Enchantments/Fire Aspect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Fire Aspect"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="AllCategorys/Sword/Enchantments/Fire Aspect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 255.0
+alignment = 1
+suffix = "/ 2"
+
+[node name="Knockback" type="PanelContainer" parent="AllCategorys/Sword/Enchantments" groups=["enchantment"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_nv6qp")
+
+[node name="MarginContainer" type="MarginContainer" parent="AllCategorys/Sword/Enchantments/Knockback"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AllCategorys/Sword/Enchantments/Knockback/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="AllCategorys/Sword/Enchantments/Knockback/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Knockback"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="AllCategorys/Sword/Enchantments/Knockback/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 255.0
+alignment = 1
+suffix = "/ 2"
+
+[node name="Looting" type="PanelContainer" parent="AllCategorys/Sword/Enchantments" groups=["enchantment"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_nv6qp")
+
+[node name="MarginContainer" type="MarginContainer" parent="AllCategorys/Sword/Enchantments/Looting"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AllCategorys/Sword/Enchantments/Looting/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="AllCategorys/Sword/Enchantments/Looting/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Looting"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="AllCategorys/Sword/Enchantments/Looting/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 255.0
+alignment = 1
+suffix = "/ 3"
+
+[node name="Sharpness" type="PanelContainer" parent="AllCategorys/Sword/Enchantments" groups=["enchantment"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_nv6qp")
+
+[node name="MarginContainer" type="MarginContainer" parent="AllCategorys/Sword/Enchantments/Sharpness"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AllCategorys/Sword/Enchantments/Sharpness/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="AllCategorys/Sword/Enchantments/Sharpness/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Sharpness"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="AllCategorys/Sword/Enchantments/Sharpness/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 255.0
+alignment = 1
+suffix = "/ 5"
+
+[node name="Smite" type="PanelContainer" parent="AllCategorys/Sword/Enchantments" groups=["enchantment"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_nv6qp")
+
+[node name="MarginContainer" type="MarginContainer" parent="AllCategorys/Sword/Enchantments/Smite"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AllCategorys/Sword/Enchantments/Smite/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="AllCategorys/Sword/Enchantments/Smite/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Smite"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="AllCategorys/Sword/Enchantments/Smite/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 255.0
+alignment = 1
+suffix = "/ 5"
+
+[node name="Sweeping Edge" type="PanelContainer" parent="AllCategorys/Sword/Enchantments" groups=["enchantment"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_nv6qp")
+
+[node name="MarginContainer" type="MarginContainer" parent="AllCategorys/Sword/Enchantments/Sweeping Edge"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AllCategorys/Sword/Enchantments/Sweeping Edge/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="AllCategorys/Sword/Enchantments/Sweeping Edge/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Sweeping Edge"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="AllCategorys/Sword/Enchantments/Sweeping Edge/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 255.0
+alignment = 1
+suffix = "/ 3"
+
+[node name="Trident" type="VBoxContainer" parent="AllCategorys"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CategoryLabel" type="Label" parent="AllCategorys/Trident"]
+layout_mode = 2
+text = "Trident"
+horizontal_alignment = 1
+
+[node name="Enchantments" type="GridContainer" parent="AllCategorys/Trident"]
+layout_mode = 2
+columns = 3
+
+[node name="Channeling" type="PanelContainer" parent="AllCategorys/Trident/Enchantments" groups=["enchantment"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_nv6qp")
+
+[node name="MarginContainer" type="MarginContainer" parent="AllCategorys/Trident/Enchantments/Channeling"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AllCategorys/Trident/Enchantments/Channeling/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="AllCategorys/Trident/Enchantments/Channeling/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Channeling"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="AllCategorys/Trident/Enchantments/Channeling/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 255.0
+alignment = 1
+suffix = "/ 1"
+
+[node name="Impaling" type="PanelContainer" parent="AllCategorys/Trident/Enchantments" groups=["enchantment"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_nv6qp")
+
+[node name="MarginContainer" type="MarginContainer" parent="AllCategorys/Trident/Enchantments/Impaling"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AllCategorys/Trident/Enchantments/Impaling/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="AllCategorys/Trident/Enchantments/Impaling/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Impaling"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="AllCategorys/Trident/Enchantments/Impaling/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 255.0
+alignment = 1
+suffix = "/ 5"
+
+[node name="Loyalty" type="PanelContainer" parent="AllCategorys/Trident/Enchantments" groups=["enchantment"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_nv6qp")
+
+[node name="MarginContainer" type="MarginContainer" parent="AllCategorys/Trident/Enchantments/Loyalty"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AllCategorys/Trident/Enchantments/Loyalty/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="AllCategorys/Trident/Enchantments/Loyalty/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Loyalty"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="AllCategorys/Trident/Enchantments/Loyalty/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 255.0
+alignment = 1
+suffix = "/ 3"
+
+[node name="Riptide" type="PanelContainer" parent="AllCategorys/Trident/Enchantments" groups=["enchantment"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_nv6qp")
+
+[node name="MarginContainer" type="MarginContainer" parent="AllCategorys/Trident/Enchantments/Riptide"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AllCategorys/Trident/Enchantments/Riptide/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="AllCategorys/Trident/Enchantments/Riptide/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Riptide"
+horizontal_alignment = 1
+
+[node name="SpinBox" type="SpinBox" parent="AllCategorys/Trident/Enchantments/Riptide/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 255.0
+alignment = 1
+suffix = "/ 3"
+
+[connection signal="value_changed" from="AllCategorys/All applicable/Enchantments/Curse of Vanishing/MarginContainer/VBoxContainer/SpinBox" to="AllCategorys/All applicable/Enchantments/Curse of Vanishing" method="_on_spin_box_value_changed"]
+[connection signal="value_changed" from="AllCategorys/All applicable/Enchantments/Mending/MarginContainer/VBoxContainer/SpinBox" to="AllCategorys/All applicable/Enchantments/Mending" method="_on_spin_box_value_changed"]
+[connection signal="value_changed" from="AllCategorys/All applicable/Enchantments/Unbreaking/MarginContainer/VBoxContainer/SpinBox" to="AllCategorys/All applicable/Enchantments/Unbreaking" method="_on_spin_box_value_changed"]
+[connection signal="value_changed" from="AllCategorys/Armor/Enchantments/Aqua Affinity/MarginContainer/VBoxContainer/SpinBox" to="AllCategorys/Armor/Enchantments/Aqua Affinity" method="_on_spin_box_value_changed"]
+[connection signal="value_changed" from="AllCategorys/Armor/Enchantments/Blast Protection/MarginContainer/VBoxContainer/SpinBox" to="AllCategorys/Armor/Enchantments/Blast Protection" method="_on_spin_box_value_changed"]
+[connection signal="value_changed" from="AllCategorys/Armor/Enchantments/Curse of Binding/MarginContainer/VBoxContainer/SpinBox" to="AllCategorys/Armor/Enchantments/Curse of Binding" method="_on_spin_box_value_changed"]
+[connection signal="value_changed" from="AllCategorys/Armor/Enchantments/Depth Strider/MarginContainer/VBoxContainer/SpinBox" to="AllCategorys/Armor/Enchantments/Depth Strider" method="_on_spin_box_value_changed"]
+[connection signal="value_changed" from="AllCategorys/Armor/Enchantments/Feather Falling/MarginContainer/VBoxContainer/SpinBox" to="AllCategorys/Armor/Enchantments/Feather Falling" method="_on_spin_box_value_changed"]
+[connection signal="value_changed" from="AllCategorys/Armor/Enchantments/Fire Protection/MarginContainer/VBoxContainer/SpinBox" to="AllCategorys/Armor/Enchantments/Fire Protection" method="_on_spin_box_value_changed"]
+[connection signal="value_changed" from="AllCategorys/Armor/Enchantments/Frost Walker/MarginContainer/VBoxContainer/SpinBox" to="AllCategorys/Armor/Enchantments/Frost Walker" method="_on_spin_box_value_changed"]
+[connection signal="value_changed" from="AllCategorys/Armor/Enchantments/Projectile Protection/MarginContainer/VBoxContainer/SpinBox" to="AllCategorys/Armor/Enchantments/Projectile Protection" method="_on_spin_box_value_changed"]
+[connection signal="value_changed" from="AllCategorys/Armor/Enchantments/Protection/MarginContainer/VBoxContainer/SpinBox" to="AllCategorys/Armor/Enchantments/Protection" method="_on_spin_box_value_changed"]
+[connection signal="value_changed" from="AllCategorys/Armor/Enchantments/Respiration/MarginContainer/VBoxContainer/SpinBox" to="AllCategorys/Armor/Enchantments/Respiration" method="_on_spin_box_value_changed"]
+[connection signal="value_changed" from="AllCategorys/Armor/Enchantments/Soul Speed/MarginContainer/VBoxContainer/SpinBox" to="AllCategorys/Armor/Enchantments/Soul Speed" method="_on_spin_box_value_changed"]
+[connection signal="value_changed" from="AllCategorys/Armor/Enchantments/Swift Sneak/MarginContainer/VBoxContainer/SpinBox" to="AllCategorys/Armor/Enchantments/Swift Sneak" method="_on_spin_box_value_changed"]
+[connection signal="value_changed" from="AllCategorys/Armor/Enchantments/Thorns/MarginContainer/VBoxContainer/SpinBox" to="AllCategorys/Armor/Enchantments/Thorns" method="_on_spin_box_value_changed"]
+[connection signal="value_changed" from="AllCategorys/Bow/Enchantments/Flame/MarginContainer/VBoxContainer/SpinBox" to="AllCategorys/Bow/Enchantments/Flame" method="_on_spin_box_value_changed"]
+[connection signal="value_changed" from="AllCategorys/Bow/Enchantments/Infinity/MarginContainer/VBoxContainer/SpinBox" to="AllCategorys/Bow/Enchantments/Infinity" method="_on_spin_box_value_changed"]
+[connection signal="value_changed" from="AllCategorys/Bow/Enchantments/Power/MarginContainer/VBoxContainer/SpinBox" to="AllCategorys/Bow/Enchantments/Power" method="_on_spin_box_value_changed"]
+[connection signal="value_changed" from="AllCategorys/Bow/Enchantments/Punch/MarginContainer/VBoxContainer/SpinBox" to="AllCategorys/Bow/Enchantments/Punch" method="_on_spin_box_value_changed"]
+[connection signal="value_changed" from="AllCategorys/Crossbow/Enchantments/Multishot/MarginContainer/VBoxContainer/SpinBox" to="AllCategorys/Crossbow/Enchantments/Multishot" method="_on_spin_box_value_changed"]
+[connection signal="value_changed" from="AllCategorys/Crossbow/Enchantments/Piercing/MarginContainer/VBoxContainer/SpinBox" to="AllCategorys/Crossbow/Enchantments/Piercing" method="_on_spin_box_value_changed"]
+[connection signal="value_changed" from="AllCategorys/Crossbow/Enchantments/Quick Charge/MarginContainer/VBoxContainer/SpinBox" to="AllCategorys/Crossbow/Enchantments/Quick Charge" method="_on_spin_box_value_changed"]
+[connection signal="value_changed" from="AllCategorys/Fishing rod/Enchantments/Luck of the Sea/MarginContainer/VBoxContainer/SpinBox" to="AllCategorys/Fishing rod/Enchantments/Luck of the Sea" method="_on_spin_box_value_changed"]
+[connection signal="value_changed" from="AllCategorys/Fishing rod/Enchantments/Lure/MarginContainer/VBoxContainer/SpinBox" to="AllCategorys/Fishing rod/Enchantments/Lure" method="_on_spin_box_value_changed"]
+[connection signal="value_changed" from="AllCategorys/Mace/Enchantments/Breach/MarginContainer/VBoxContainer/SpinBox" to="AllCategorys/Mace/Enchantments/Breach" method="_on_spin_box_value_changed"]
+[connection signal="value_changed" from="AllCategorys/Mace/Enchantments/Density/MarginContainer/VBoxContainer/SpinBox" to="AllCategorys/Mace/Enchantments/Density" method="_on_spin_box_value_changed"]
+[connection signal="value_changed" from="AllCategorys/Mace/Enchantments/Wind Burst/MarginContainer/VBoxContainer/SpinBox" to="AllCategorys/Mace/Enchantments/Wind Burst" method="_on_spin_box_value_changed"]
+[connection signal="value_changed" from="AllCategorys/Pickaxe Shovel Axe Hoe Shears/Enchantments/Efficiency/MarginContainer/VBoxContainer/SpinBox" to="AllCategorys/Pickaxe Shovel Axe Hoe Shears/Enchantments/Efficiency" method="_on_spin_box_value_changed"]
+[connection signal="value_changed" from="AllCategorys/Pickaxe Shovel Axe Hoe Shears/Enchantments/Fortune/MarginContainer/VBoxContainer/SpinBox" to="AllCategorys/Pickaxe Shovel Axe Hoe Shears/Enchantments/Fortune" method="_on_spin_box_value_changed"]
+[connection signal="value_changed" from="AllCategorys/Pickaxe Shovel Axe Hoe Shears/Enchantments/Silk Touch/MarginContainer/VBoxContainer/SpinBox" to="AllCategorys/Pickaxe Shovel Axe Hoe Shears/Enchantments/Silk Touch" method="_on_spin_box_value_changed"]
+[connection signal="value_changed" from="AllCategorys/Sword/Enchantments/Bane of Arthropods/MarginContainer/VBoxContainer/SpinBox" to="AllCategorys/Sword/Enchantments/Bane of Arthropods" method="_on_spin_box_value_changed"]
+[connection signal="value_changed" from="AllCategorys/Sword/Enchantments/Fire Aspect/MarginContainer/VBoxContainer/SpinBox" to="AllCategorys/Sword/Enchantments/Fire Aspect" method="_on_spin_box_value_changed"]
+[connection signal="value_changed" from="AllCategorys/Sword/Enchantments/Knockback/MarginContainer/VBoxContainer/SpinBox" to="AllCategorys/Sword/Enchantments/Knockback" method="_on_spin_box_value_changed"]
+[connection signal="value_changed" from="AllCategorys/Sword/Enchantments/Looting/MarginContainer/VBoxContainer/SpinBox" to="AllCategorys/Sword/Enchantments/Looting" method="_on_spin_box_value_changed"]
+[connection signal="value_changed" from="AllCategorys/Sword/Enchantments/Sharpness/MarginContainer/VBoxContainer/SpinBox" to="AllCategorys/Sword/Enchantments/Sharpness" method="_on_spin_box_value_changed"]
+[connection signal="value_changed" from="AllCategorys/Sword/Enchantments/Smite/MarginContainer/VBoxContainer/SpinBox" to="AllCategorys/Sword/Enchantments/Smite" method="_on_spin_box_value_changed"]
+[connection signal="value_changed" from="AllCategorys/Sword/Enchantments/Sweeping Edge/MarginContainer/VBoxContainer/SpinBox" to="AllCategorys/Sword/Enchantments/Sweeping Edge" method="_on_spin_box_value_changed"]
+[connection signal="value_changed" from="AllCategorys/Trident/Enchantments/Channeling/MarginContainer/VBoxContainer/SpinBox" to="AllCategorys/Trident/Enchantments/Channeling" method="_on_spin_box_value_changed"]
+[connection signal="value_changed" from="AllCategorys/Trident/Enchantments/Impaling/MarginContainer/VBoxContainer/SpinBox" to="AllCategorys/Trident/Enchantments/Impaling" method="_on_spin_box_value_changed"]
+[connection signal="value_changed" from="AllCategorys/Trident/Enchantments/Loyalty/MarginContainer/VBoxContainer/SpinBox" to="AllCategorys/Trident/Enchantments/Loyalty" method="_on_spin_box_value_changed"]
+[connection signal="value_changed" from="AllCategorys/Trident/Enchantments/Riptide/MarginContainer/VBoxContainer/SpinBox" to="AllCategorys/Trident/Enchantments/Riptide" method="_on_spin_box_value_changed"]

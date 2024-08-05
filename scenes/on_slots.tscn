@@ -1,0 +1,96 @@
+[gd_scene load_steps=2 format=3 uid="uid://d0swpvni47lfq"]
+
+[ext_resource type="Script" path="res://scripts/on_slots.gd" id="1_heaya"]
+
+[node name="GridContainer" type="GridContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 2
+script = ExtResource("1_heaya")
+
+[node name="Any" type="CheckButton" parent="." groups=["slot"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Any"
+alignment = 1
+
+[node name="Body" type="CheckButton" parent="." groups=["slot"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Body (For doge)"
+alignment = 1
+
+[node name="Armor" type="CheckButton" parent="." groups=["slot"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Armor"
+alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 2
+columns = 2
+
+[node name="Head" type="CheckButton" parent="GridContainer" groups=["slot"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Head"
+alignment = 1
+
+[node name="Chest" type="CheckButton" parent="GridContainer" groups=["slot"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Chest"
+alignment = 1
+
+[node name="Leggings" type="CheckButton" parent="GridContainer" groups=["slot"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Leggings"
+alignment = 1
+
+[node name="Feet" type="CheckButton" parent="GridContainer" groups=["slot"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Feet"
+alignment = 1
+
+[node name="Hand" type="CheckButton" parent="." groups=["slot"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Hand"
+alignment = 1
+
+[node name="GridContainer2" type="GridContainer" parent="."]
+layout_mode = 2
+columns = 2
+
+[node name="Main Hand" type="CheckButton" parent="GridContainer2" groups=["slot"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Main Hand"
+alignment = 1
+
+[node name="Off Hand" type="CheckButton" parent="GridContainer2" groups=["slot"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Off Hand"
+alignment = 1
+
+[node name="Debounce" type="Timer" parent="."]
+wait_time = 0.05
+one_shot = true
+
+[connection signal="timeout" from="Debounce" to="." method="_on_debounce_timeout"]

@@ -1,0 +1,26 @@
+{
+   "&l":{
+	  "description":"Bold",
+	  "bb_code":"[b]"
+   },
+   "&m":{
+	  "description":"Strikethrough",
+	  "bb_code":"[s]"
+   },
+   "&n":{
+	  "description":"Underline",
+	  "bb_code":"[u]"
+   },
+   "&o":{
+	  "description":"Italic",
+	  "bb_code":"[i]"
+   },
+   "&r":{
+	  "description":"Reset",
+	  "bb_code":""
+   },
+   "&k":{
+	  "description":"Obfuscated",
+	  "bb_code":""
+   }
+}

@@ -1,0 +1,296 @@
+[
+   {
+	  "name":"Aqua Affinity",
+	  "description":"Increases underwater mining speed.",
+	  "max_level":"1",
+	  "category":"Armor",
+	  "id":"aqua_affinity"
+   },
+   {
+	  "name":"Bane of Arthropods",
+	  "description":"Increases damage and applies Slowness IV to arthropod mobs (spiders, cave spiders, silverfish, endermites and bees).",
+	  "max_level":"5",
+	  "category":"Sword",
+	  "id":"bane_of_arthropods"
+   },
+   {
+	  "name":"Blast Protection",
+	  "description":"Reduces explosion damage and knockback.",
+	  "max_level":"4",
+	  "category":"Armor",
+	  "id":"blast_protection"
+   },
+   {
+	  "name":"Breach",
+	  "description":"Reduces the effectiveness of the armor on the target. The armor's effectiveness is reduced by 15% per level.",
+	  "max_level":"4",
+	  "category":"Mace",
+	  "id":"breach"
+   },
+   {
+	  "name":"Channeling",
+	  "description":"During thunderstorms, trident summons a lightning bolt on the target when hitting it.",
+	  "max_level":"1",
+	  "category":"Trident",
+	  "id":"channeling"
+   },
+   {
+	  "name":"Curse of Binding",
+	  "description":"Items cannot be removed from armor slots.",
+	  "max_level":"1",
+	  "category":"Armor",
+	  "id":"binding_curse"
+   },
+   {
+	  "name":"Curse of Vanishing",
+	  "description":"Item disappears on death.",
+	  "max_level":"1",
+	  "category":"All applicable",
+	  "id":"vanishing_curse"
+   },
+   {
+	  "name":"Density",
+	  "description":"Increases the damage dealt per block fallen, increasing by 0.5 per level.",
+	  "max_level":"5",
+	  "category":"Mace",
+	  "id":"density"
+   },
+   {
+	  "name":"Depth Strider",
+	  "description":"Increases underwater movement speed.",
+	  "max_level":"3",
+	  "category":"Armor",
+	  "id":"depth_strider"
+   },
+   {
+	  "name":"Efficiency",
+	  "description":"Increases tool speed, as well as the chance for axes to disable shields.",
+	  "max_level":"5",
+	  "category":"Pickaxe Shovel Axe Hoe Shears",
+	  "id":"efficiency"
+   },
+   {
+	  "name":"Feather Falling",
+	  "description":"Reduces fall damage.",
+	  "max_level":"4",
+	  "category":"Armor",
+	  "id":"feather_falling"
+   },
+   {
+	  "name":"Fire Aspect",
+	  "description":"Sets target on fire.",
+	  "max_level":"2",
+	  "category":"Sword",
+	  "id":"fire_aspect"
+   },
+   {
+	  "name":"Fire Protection",
+	  "description":"Reduces fire damage and burn time. Mutually exclusive with other protections.",
+	  "max_level":"4",
+	  "category":"Armor",
+	  "id":"fire_protection"
+   },
+   {
+	  "name":"Flame",
+	  "description":"Arrows shot are ignited and deal fire damage to the target.",
+	  "max_level":"1",
+	  "category":"Bow",
+	  "id":"flame"
+   },
+   {
+	  "name":"Fortune",
+	  "description":"Increases the amount of block drops.",
+	  "max_level":"3",
+	  "category":"Pickaxe Shovel Axe Hoe Shears",
+	  "id":"fortune"
+   },
+   {
+	  "name":"Frost Walker",
+	  "description":"Allows the player to walk on water by freezing the water under their feet.",
+	  "max_level":"2",
+	  "category":"Armor",
+	  "id":"frost_walker"
+   },
+   {
+	  "name":"Impaling",
+	  "description":"Increases damage against aquatic mobs. In Bedrock Edition, increases damage against mobs in water or rain.",
+	  "max_level":"5",
+	  "category":"Trident",
+	  "id":"impaling"
+   },
+   {
+	  "name":"Infinity",
+	  "description":"Prevents consumption of normal arrows (tipped arrows and spectral arrows are consumed).",
+	  "max_level":"1",
+	  "category":"Bow",
+	  "id":"infinity"
+   },
+   {
+	  "name":"Knockback",
+	  "description":"Increases knockback.",
+	  "max_level":"2",
+	  "category":"Sword",
+	  "id":"knockback"
+   },
+   {
+	  "name":"Looting",
+	  "description":"Increases mob loot.",
+	  "max_level":"3",
+	  "category":"Sword",
+	  "id":"looting"
+   },
+   {
+	  "name":"Loyalty",
+	  "description":"Trident returns after being thrown.",
+	  "max_level":"3",
+	  "category":"Trident",
+	  "id":"loyalty"
+   },
+   {
+	  "name":"Luck of the Sea",
+	  "description":"Increases rate of good loot (enchanting books, etc.).",
+	  "max_level":"3",
+	  "category":"Fishing rod",
+	  "id":"luck_of_the_sea"
+   },
+   {
+	  "name":"Lure",
+	  "description":"Decreases time for bites.",
+	  "max_level":"3",
+	  "category":"Fishing rod",
+	  "id":"lure"
+   },
+   {
+	  "name":"Mending",
+	  "description":"Repairs the item using experience.",
+	  "max_level":"1",
+	  "category":"All applicable",
+	  "id":"mending"
+   },
+   {
+	  "name":"Multishot",
+	  "description":"Fires 3 arrows at the same time.",
+	  "max_level":"1",
+	  "category":"Crossbow",
+	  "id":"multishot"
+   },
+   {
+	  "name":"Piercing",
+	  "description":"Arrows pierce entities, allowing for arrows to pierce through stacks of mobs.",
+	  "max_level":"4",
+	  "category":"Crossbow",
+	  "id":"piercing"
+   },
+   {
+	  "name":"Power",
+	  "description":"Increases arrow damage.",
+	  "max_level":"5",
+	  "category":"Bow",
+	  "id":"power"
+   },
+   {
+	  "name":"Projectile Protection",
+	  "description":"Reduces damage from projectiles.",
+	  "max_level":"4",
+	  "category":"Armor",
+	  "id":"projectile_protection"
+   },
+   {
+	  "name":"Protection",
+	  "description":"Reduces generic damage.",
+	  "max_level":"4",
+	  "category":"Armor",
+	  "id":"protection"
+   },
+   {
+	  "name":"Punch",
+	  "description":"Increases arrow knockback.",
+	  "max_level":"2",
+	  "category":"Bow",
+	  "id":"punch"
+   },
+   {
+	  "name":"Quick Charge",
+	  "description":"Decreases crossbow charging time.",
+	  "max_level":"3",
+	  "category":"Crossbow",
+	  "id":"quick_charge"
+   },
+   {
+	  "name":"Respiration",
+	  "description":"Extends underwater breathing time.",
+	  "max_level":"3",
+	  "category":"Armor",
+	  "id":"respiration"
+   },
+   {
+	  "name":"Riptide",
+	  "description":"Trident launches player with itself when thrown while in water or rain.",
+	  "max_level":"3",
+	  "category":"Trident",
+	  "id":"riptide"
+   },
+   {
+	  "name":"Sharpness",
+	  "description":"Increases melee damage.",
+	  "max_level":"5",
+	  "category":"Sword",
+	  "id":"sharpness"
+   },
+   {
+	  "name":"Silk Touch",
+	  "description":"Mined blocks drop themselves.",
+	  "max_level":"1",
+	  "category":"Pickaxe Shovel Axe Hoe Shears",
+	  "id":"silk_touch"
+   },
+   {
+	  "name":"Smite",
+	  "description":"Increases damage to the undead.",
+	  "max_level":"5",
+	  "category":"Sword",
+	  "id":"smite"
+   },
+   {
+	  "name":"Soul Speed",
+	  "description":"Increases movement speed on soul sand and soul soil.",
+	  "max_level":"3",
+	  "category":"Armor",
+	  "id":"soul_speed"
+   },
+   {
+	  "name":"Sweeping Edge",
+	  "description":"Increases sweeping attack damage.",
+	  "max_level":"3",
+	  "category":"Sword",
+	  "id":"sweeping_edge"
+   },
+   {
+	  "name":"Swift Sneak",
+	  "description":"Increases sneaking speed.",
+	  "max_level":"3",
+	  "category":"Armor",
+	  "id":"swift_sneak"
+   },
+   {
+	  "name":"Thorns",
+	  "description":"Taking damage causes the attacker to also take damage.",
+	  "max_level":"3",
+	  "category":"Armor",
+	  "id":"thorns"
+   },
+   {
+	  "name":"Unbreaking",
+	  "description":"Reduces durability damage.",
+	  "max_level":"3",
+	  "category":"All applicable",
+	  "id":"unbreaking"
+   },
+   {
+	  "name":"Wind Burst",
+	  "description":"Emits a burst of wind (like that of a wind charge) upon executing a mace smash attack on an entity, launching the attacker upward. It can be used to chain smash attacks together, and the strength of the launch increases per level.",
+	  "max_level":"3",
+	  "category":"Mace",
+	  "id":"wind_burst"
+   }
+]

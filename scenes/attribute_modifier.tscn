@@ -1,0 +1,158 @@
+[gd_scene load_steps=4 format=3 uid="uid://bu5lnukev53px"]
+
+[ext_resource type="Script" path="res://scripts/attribute_modifier.gd" id="1_trqvv"]
+[ext_resource type="PackedScene" uid="uid://d0swpvni47lfq" path="res://scenes/on_slots.tscn" id="2_e5oyd"]
+[ext_resource type="Texture2D" uid="uid://dlk5j6ik82jt8" path="res://trash-can-solid.svg" id="3_omrnd"]
+
+[node name="AttributeModifier" type="PanelContainer"]
+offset_right = 507.0
+offset_bottom = 233.0
+script = ExtResource("1_trqvv")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="IdLabel" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "ID"
+horizontal_alignment = 1
+
+[node name="Id" type="LineEdit" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+placeholder_text = "Random"
+alignment = 1
+
+[node name="TypeLabel" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Type"
+horizontal_alignment = 1
+
+[node name="Type" type="OptionButton" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+item_count = 31
+selected = 0
+popup/item_0/text = "[Generic] Armor"
+popup/item_0/id = 1
+popup/item_1/text = "[Generic] Armor Toughness"
+popup/item_1/id = 2
+popup/item_2/text = "[Generic] Attack Damage"
+popup/item_2/id = 3
+popup/item_3/text = "[Generic] Attack Knockback"
+popup/item_3/id = 4
+popup/item_4/text = "[Generic] Attack Speed"
+popup/item_4/id = 5
+popup/item_5/text = "[Generic] Flying Speed"
+popup/item_5/id = 6
+popup/item_6/text = "[Generic] Follow Range"
+popup/item_6/id = 7
+popup/item_7/text = "[Generic] Knockback Resistance"
+popup/item_7/id = 8
+popup/item_8/text = "[Generic] Luck"
+popup/item_8/id = 9
+popup/item_9/text = "[Generic] Max Absorption"
+popup/item_9/id = 10
+popup/item_10/text = "[Generic] Max Health"
+popup/item_10/id = 11
+popup/item_11/text = "[Generic] Movement Speed"
+popup/item_11/id = 12
+popup/item_12/text = "[Generic] Scale"
+popup/item_12/id = 13
+popup/item_13/text = "[Generic] Step Height"
+popup/item_13/id = 14
+popup/item_14/text = "[Generic] Jump Strength"
+popup/item_14/id = 15
+popup/item_15/text = "[Generic] Gravity"
+popup/item_15/id = 16
+popup/item_16/text = "[Generic] Safe Fall Distance"
+popup/item_16/id = 17
+popup/item_17/text = "[Generic] Fall Damage Multiplier"
+popup/item_17/id = 18
+popup/item_18/text = "[Generic] Burning Time"
+popup/item_18/id = 19
+popup/item_19/text = "[Generic] Explosion Knockback Resistance"
+popup/item_19/id = 20
+popup/item_20/text = "[Generic] Movement Efficiency"
+popup/item_20/id = 21
+popup/item_21/text = "[Generic] Oxygen Bonus"
+popup/item_21/id = 22
+popup/item_22/text = "[Generic] Water Movement Efficiency"
+popup/item_22/id = 23
+popup/item_23/text = "[Player] Block Interaction Range"
+popup/item_23/id = 24
+popup/item_24/text = "[Player] Entity Interaction Range"
+popup/item_24/id = 25
+popup/item_25/text = "[Player] Block Break Speed"
+popup/item_25/id = 26
+popup/item_26/text = "[Player] Mining Efficiency"
+popup/item_26/id = 27
+popup/item_27/text = "[Player] Sneaking Speed"
+popup/item_27/id = 28
+popup/item_28/text = "[Player] Submerged Mining Speed"
+popup/item_28/id = 29
+popup/item_29/text = "[Player] Sweeping Damage Ratio"
+popup/item_29/id = 30
+popup/item_30/text = "[Zombie] Spawn Reinforcements"
+popup/item_30/id = 31
+
+[node name="OperationLabel" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Operation"
+horizontal_alignment = 1
+
+[node name="Operation" type="OptionButton" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+item_count = 3
+selected = 0
+popup/item_0/text = "Number"
+popup/item_0/id = 0
+popup/item_1/text = "Scalar"
+popup/item_1/id = 1
+popup/item_2/text = "Scale"
+popup/item_2/id = 2
+
+[node name="AmountLabel" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Amount"
+horizontal_alignment = 1
+
+[node name="Amount" type="SpinBox" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+min_value = -2.14748e+10
+max_value = 2.14748e+10
+step = 0.0
+allow_greater = true
+allow_lesser = true
+alignment = 1
+custom_arrow_step = 1.0
+
+[node name="OnSlots" parent="MarginContainer/HBoxContainer" instance=ExtResource("2_e5oyd")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Delete" type="Button" parent="MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+size_flags_vertical = 4
+icon = ExtResource("3_omrnd")
+icon_alignment = 1
+expand_icon = true
+
+[connection signal="text_changed" from="MarginContainer/HBoxContainer/VBoxContainer/Id" to="." method="_on_id_text_changed"]
+[connection signal="item_selected" from="MarginContainer/HBoxContainer/VBoxContainer/Type" to="." method="_on_type_item_selected"]
+[connection signal="item_selected" from="MarginContainer/HBoxContainer/VBoxContainer/Operation" to="." method="_on_operation_item_selected"]
+[connection signal="value_changed" from="MarginContainer/HBoxContainer/VBoxContainer/Amount" to="." method="_on_amount_value_changed"]
+[connection signal="update" from="MarginContainer/HBoxContainer/OnSlots" to="." method="_on_on_slots_update"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/Delete" to="." method="_on_delete_pressed"]
