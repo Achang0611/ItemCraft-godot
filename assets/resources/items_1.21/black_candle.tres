@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_tt1ny"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/black_candle.png" id="2_7u2ss"]
+
+[resource]
+script = ExtResource("1_tt1ny")
+id = "black_candle"
+name = "Black Candle"
+texture = ExtResource("2_7u2ss")
+is_block = true

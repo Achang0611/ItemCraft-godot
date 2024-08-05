@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_5cq1t"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/brown_mushroom_block.png" id="2_anm67"]
+
+[resource]
+script = ExtResource("1_5cq1t")
+id = "brown_mushroom_block"
+name = "Brown Mushroom Block"
+texture = ExtResource("2_anm67")
+is_block = true

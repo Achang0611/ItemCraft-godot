@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_aivyu"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/shulker_shell.png" id="2_avimn"]
+
+[resource]
+script = ExtResource("1_aivyu")
+id = "shulker_shell"
+name = "Shulker Shell"
+texture = ExtResource("2_avimn")
+is_block = false

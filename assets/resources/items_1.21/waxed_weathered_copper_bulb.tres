@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_lc761"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/waxed_weathered_copper_bulb.png" id="2_68s4k"]
+
+[resource]
+script = ExtResource("1_lc761")
+id = "waxed_weathered_copper_bulb"
+name = "Waxed Weathered Copper Bulb"
+texture = ExtResource("2_68s4k")
+is_block = true

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_alvor"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/iron_chestplate.png" id="2_elx31"]
+
+[resource]
+script = ExtResource("1_alvor")
+id = "iron_chestplate"
+name = "Iron Chestplate"
+texture = ExtResource("2_elx31")
+is_block = false

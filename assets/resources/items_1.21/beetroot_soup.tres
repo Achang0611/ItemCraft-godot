@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_meyu5"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/beetroot_soup.png" id="2_6tedx"]
+
+[resource]
+script = ExtResource("1_meyu5")
+id = "beetroot_soup"
+name = "Beetroot Soup"
+texture = ExtResource("2_6tedx")
+is_block = false

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_ule23"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/brown_bed.png" id="2_k3ohg"]
+
+[resource]
+script = ExtResource("1_ule23")
+id = "brown_bed"
+name = "Brown Bed"
+texture = ExtResource("2_k3ohg")
+is_block = true

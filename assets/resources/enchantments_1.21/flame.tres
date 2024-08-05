@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Enchantment" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://resources/components/enchantment.gd" id="1_g6327"]
+
+[resource]
+script = ExtResource("1_g6327")
+name = "Flame"
+id = "flame"
+level = 0
+description = "Arrows shot are ignited and deal fire damage to the target."
+category = "Bow"
+max_level = 1

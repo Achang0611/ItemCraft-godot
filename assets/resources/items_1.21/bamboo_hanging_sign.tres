@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_qqbfc"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/bamboo_hanging_sign.png" id="2_jw8de"]
+
+[resource]
+script = ExtResource("1_qqbfc")
+id = "bamboo_hanging_sign"
+name = "Bamboo Hanging Sign"
+texture = ExtResource("2_jw8de")
+is_block = true

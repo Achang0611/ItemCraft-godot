@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_3q6c2"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/golden_axe.png" id="2_jjnfs"]
+
+[resource]
+script = ExtResource("1_3q6c2")
+id = "golden_axe"
+name = "Golden Axe"
+texture = ExtResource("2_jjnfs")
+is_block = false

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_q5wor"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/villager_spawn_egg.png" id="2_r2n7g"]
+
+[resource]
+script = ExtResource("1_q5wor")
+id = "villager_spawn_egg"
+name = "Villager Spawn Egg"
+texture = ExtResource("2_r2n7g")
+is_block = false

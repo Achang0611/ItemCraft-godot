@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_1jhse"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/magma_cube_spawn_egg.png" id="2_b5ngu"]
+
+[resource]
+script = ExtResource("1_1jhse")
+id = "magma_cube_spawn_egg"
+name = "Magma Cube Spawn Egg"
+texture = ExtResource("2_b5ngu")
+is_block = false

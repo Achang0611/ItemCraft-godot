@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Slot" load_steps=11 format=3 uid="uid://ogf0w44rj8n3"]
+
+[ext_resource type="Script" path="res://resources/components/slot.gd" id="1_dn6hl"]
+[ext_resource type="Resource" path="res://assets/resources/slots_1.21/armor.tres" id="1_w1biv"]
+[ext_resource type="Resource" path="res://assets/resources/slots_1.21/hand.tres" id="2_syg2e"]
+[ext_resource type="Resource" path="res://assets/resources/slots_1.21/mainhand.tres" id="3_cnbee"]
+[ext_resource type="Resource" path="res://assets/resources/slots_1.21/offhand.tres" id="4_n88d8"]
+[ext_resource type="Resource" path="res://assets/resources/slots_1.21/head.tres" id="5_qpoi1"]
+[ext_resource type="Resource" path="res://assets/resources/slots_1.21/chest.tres" id="6_pewcj"]
+[ext_resource type="Resource" path="res://assets/resources/slots_1.21/legs.tres" id="7_s08nw"]
+[ext_resource type="Resource" path="res://assets/resources/slots_1.21/feet.tres" id="8_xwru1"]
+[ext_resource type="Resource" path="res://assets/resources/slots_1.21/body.tres" id="9_kxnnk"]
+
+[resource]
+script = ExtResource("1_dn6hl")
+name = "Any"
+id = "any"
+equivalent = Array[ExtResource("1_dn6hl")]([ExtResource("1_w1biv"), ExtResource("2_syg2e"), ExtResource("3_cnbee"), ExtResource("4_n88d8"), ExtResource("5_qpoi1"), ExtResource("6_pewcj"), ExtResource("7_s08nw"), ExtResource("8_xwru1"), ExtResource("9_kxnnk")])

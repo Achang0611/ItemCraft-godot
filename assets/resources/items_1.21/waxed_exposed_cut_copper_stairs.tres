@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_2tyqp"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/waxed_exposed_cut_copper_stairs.png" id="2_g7n85"]
+
+[resource]
+script = ExtResource("1_2tyqp")
+id = "waxed_exposed_cut_copper_stairs"
+name = "Waxed Exposed Cut Copper Stairs"
+texture = ExtResource("2_g7n85")
+is_block = true

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_uuqpe"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/pink_petals.png" id="2_oe0yj"]
+
+[resource]
+script = ExtResource("1_uuqpe")
+id = "pink_petals"
+name = "Pink Petals"
+texture = ExtResource("2_oe0yj")
+is_block = true

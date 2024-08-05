@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_u36qy"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/beetroot.png" id="2_piddn"]
+
+[resource]
+script = ExtResource("1_u36qy")
+id = "beetroot"
+name = "Beetroot"
+texture = ExtResource("2_piddn")
+is_block = false

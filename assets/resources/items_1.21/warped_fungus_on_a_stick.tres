@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_1j6n5"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/warped_fungus_on_a_stick.png" id="2_dy2g6"]
+
+[resource]
+script = ExtResource("1_1j6n5")
+id = "warped_fungus_on_a_stick"
+name = "Warped Fungus On A Stick"
+texture = ExtResource("2_dy2g6")
+is_block = false

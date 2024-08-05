@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_g4t67"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/warped_hanging_sign.png" id="2_frgi7"]
+
+[resource]
+script = ExtResource("1_g4t67")
+id = "warped_hanging_sign"
+name = "Warped Hanging Sign"
+texture = ExtResource("2_frgi7")
+is_block = true

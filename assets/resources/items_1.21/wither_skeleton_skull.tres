@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_d33l7"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/wither_skeleton_skull.png" id="2_tmknv"]
+
+[resource]
+script = ExtResource("1_d33l7")
+id = "wither_skeleton_skull"
+name = "Wither Skeleton Skull"
+texture = ExtResource("2_tmknv")
+is_block = true

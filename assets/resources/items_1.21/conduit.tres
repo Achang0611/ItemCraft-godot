@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_lg6si"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/conduit.png" id="2_nebf5"]
+
+[resource]
+script = ExtResource("1_lg6si")
+id = "conduit"
+name = "Conduit"
+texture = ExtResource("2_nebf5")
+is_block = true

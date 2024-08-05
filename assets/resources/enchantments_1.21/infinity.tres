@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Enchantment" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://resources/components/enchantment.gd" id="1_mb4ai"]
+
+[resource]
+script = ExtResource("1_mb4ai")
+name = "Infinity"
+id = "infinity"
+level = 0
+description = "Prevents consumption of normal arrows (tipped arrows and spectral arrows are consumed)."
+category = "Bow"
+max_level = 1

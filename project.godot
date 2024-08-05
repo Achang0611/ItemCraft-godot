@@ -18,7 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 Components="*res://scripts/components.gd"
-Items="*res://scenes/item_resource_preloader.tscn"
+Items="*res://scenes/item_preloader.tscn"
 
 [display]
 

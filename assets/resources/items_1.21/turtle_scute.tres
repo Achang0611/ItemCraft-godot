@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_4es2k"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/turtle_scute.png" id="2_4i1jb"]
+
+[resource]
+script = ExtResource("1_4es2k")
+id = "turtle_scute"
+name = "Turtle Scute"
+texture = ExtResource("2_4i1jb")
+is_block = false

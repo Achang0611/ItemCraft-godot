@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_litm4"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/acacia_planks.png" id="2_q7vs2"]
+
+[resource]
+script = ExtResource("1_litm4")
+id = "acacia_planks"
+name = "Acacia Planks"
+texture = ExtResource("2_q7vs2")
+is_block = true

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_0poro"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/dried_kelp.png" id="2_trr2i"]
+
+[resource]
+script = ExtResource("1_0poro")
+id = "dried_kelp"
+name = "Dried Kelp"
+texture = ExtResource("2_trr2i")
+is_block = false

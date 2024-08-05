@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_hvxfi"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/water_bucket.png" id="2_cji45"]
+
+[resource]
+script = ExtResource("1_hvxfi")
+id = "water_bucket"
+name = "Water Bucket"
+texture = ExtResource("2_cji45")
+is_block = false

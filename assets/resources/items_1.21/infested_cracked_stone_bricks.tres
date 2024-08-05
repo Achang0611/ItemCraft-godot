@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_l1o2a"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/infested_cracked_stone_bricks.png" id="2_bei3x"]
+
+[resource]
+script = ExtResource("1_l1o2a")
+id = "infested_cracked_stone_bricks"
+name = "Infested Cracked Stone Bricks"
+texture = ExtResource("2_bei3x")
+is_block = true

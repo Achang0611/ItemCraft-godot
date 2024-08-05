@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_3prl1"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/pumpkin_pie.png" id="2_pf61k"]
+
+[resource]
+script = ExtResource("1_3prl1")
+id = "pumpkin_pie"
+name = "Pumpkin Pie"
+texture = ExtResource("2_pf61k")
+is_block = false

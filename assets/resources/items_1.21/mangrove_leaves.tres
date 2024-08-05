@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_lf1vg"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/mangrove_leaves.png" id="2_furg3"]
+
+[resource]
+script = ExtResource("1_lf1vg")
+id = "mangrove_leaves"
+name = "Mangrove Leaves"
+texture = ExtResource("2_furg3")
+is_block = true

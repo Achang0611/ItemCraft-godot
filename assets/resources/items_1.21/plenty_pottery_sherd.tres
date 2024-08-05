@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_v3cg3"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/plenty_pottery_sherd.png" id="2_ln05j"]
+
+[resource]
+script = ExtResource("1_v3cg3")
+id = "plenty_pottery_sherd"
+name = "Plenty Pottery Sherd"
+texture = ExtResource("2_ln05j")
+is_block = false

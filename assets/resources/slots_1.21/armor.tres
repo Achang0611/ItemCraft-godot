@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Slot" load_steps=6 format=3 uid="uid://c2ldjqc3lp7j5"]
+
+[ext_resource type="Resource" path="res://assets/resources/slots_1.21/head.tres" id="1_gqsre"]
+[ext_resource type="Script" path="res://resources/components/slot.gd" id="1_ndbvp"]
+[ext_resource type="Resource" path="res://assets/resources/slots_1.21/chest.tres" id="2_odubv"]
+[ext_resource type="Resource" path="res://assets/resources/slots_1.21/legs.tres" id="3_g1p27"]
+[ext_resource type="Resource" path="res://assets/resources/slots_1.21/feet.tres" id="4_8kjir"]
+
+[resource]
+script = ExtResource("1_ndbvp")
+name = "Armor"
+id = "armor"
+equivalent = Array[ExtResource("1_ndbvp")]([ExtResource("1_gqsre"), ExtResource("2_odubv"), ExtResource("3_g1p27"), ExtResource("4_8kjir")])

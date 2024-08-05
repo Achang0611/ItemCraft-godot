@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_2r2mu"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/acacia_fence_gate.png" id="2_1jcds"]
+
+[resource]
+script = ExtResource("1_2r2mu")
+id = "acacia_fence_gate"
+name = "Acacia Fence Gate"
+texture = ExtResource("2_1jcds")
+is_block = true

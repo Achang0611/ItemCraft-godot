@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_n15k4"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/creeper_head.png" id="2_6mmrg"]
+
+[resource]
+script = ExtResource("1_n15k4")
+id = "creeper_head"
+name = "Creeper Head"
+texture = ExtResource("2_6mmrg")
+is_block = true

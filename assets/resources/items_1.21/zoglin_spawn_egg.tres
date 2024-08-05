@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_442xt"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/zoglin_spawn_egg.png" id="2_1ngxg"]
+
+[resource]
+script = ExtResource("1_442xt")
+id = "zoglin_spawn_egg"
+name = "Zoglin Spawn Egg"
+texture = ExtResource("2_1ngxg")
+is_block = false

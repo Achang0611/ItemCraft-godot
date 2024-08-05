@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_bluoy"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/blue_stained_glass_pane.png" id="2_e64wk"]
+
+[resource]
+script = ExtResource("1_bluoy")
+id = "blue_stained_glass_pane"
+name = "Blue Stained Glass Pane"
+texture = ExtResource("2_e64wk")
+is_block = true

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_8fi0e"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/pufferfish_bucket.png" id="2_123yq"]
+
+[resource]
+script = ExtResource("1_8fi0e")
+id = "pufferfish_bucket"
+name = "Pufferfish Bucket"
+texture = ExtResource("2_123yq")
+is_block = false

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_xn4y8"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/iron_nugget.png" id="2_laajw"]
+
+[resource]
+script = ExtResource("1_xn4y8")
+id = "iron_nugget"
+name = "Iron Nugget"
+texture = ExtResource("2_laajw")
+is_block = false

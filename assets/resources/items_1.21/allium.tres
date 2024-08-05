@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_r8sqb"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/allium.png" id="2_vx8r5"]
+
+[resource]
+script = ExtResource("1_r8sqb")
+id = "allium"
+name = "Allium"
+texture = ExtResource("2_vx8r5")
+is_block = true

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_shyte"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/heavy_weighted_pressure_plate.png" id="2_rho6y"]
+
+[resource]
+script = ExtResource("1_shyte")
+id = "heavy_weighted_pressure_plate"
+name = "Heavy Weighted Pressure Plate"
+texture = ExtResource("2_rho6y")
+is_block = true

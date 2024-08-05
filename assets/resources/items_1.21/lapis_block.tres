@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_n702u"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/lapis_block.png" id="2_hs7my"]
+
+[resource]
+script = ExtResource("1_n702u")
+id = "lapis_block"
+name = "Lapis Block"
+texture = ExtResource("2_hs7my")
+is_block = false

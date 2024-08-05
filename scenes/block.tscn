@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/block.gd" id="1_jugrs"]
 [ext_resource type="Texture2D" uid="uid://dlk5j6ik82jt8" path="res://trash-can-solid.svg" id="2_r40ys"]
-[ext_resource type="Texture2D" uid="uid://ddyv1i0wgyi7u" path="res://items_1.21/cobblestone.png" id="2_wkleh"]
+[ext_resource type="Texture2D" uid="uid://ddyv1i0wgyi7u" path="res://assets/images/item_textures_1.21/cobblestone.png" id="2_w5023"]
 [ext_resource type="PackedScene" uid="uid://d2uehm8xi422v" path="res://scenes/item_selector.tscn" id="4_vwfj5"]
 
 [node name="Block" type="PanelContainer"]
@@ -25,7 +25,7 @@ layout_mode = 2
 
 [node name="ItemTexture" type="TextureRect" parent="VBoxContainer/ItemContainer/HBoxContainer"]
 layout_mode = 2
-texture = ExtResource("2_wkleh")
+texture = ExtResource("2_w5023")
 expand_mode = 2
 stretch_mode = 5
 

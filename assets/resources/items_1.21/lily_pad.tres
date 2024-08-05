@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_4or70"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/lily_pad.png" id="2_pnt8o"]
+
+[resource]
+script = ExtResource("1_4or70")
+id = "lily_pad"
+name = "Lily Pad"
+texture = ExtResource("2_pnt8o")
+is_block = true

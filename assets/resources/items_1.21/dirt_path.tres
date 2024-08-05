@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_sm7ft"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/dirt_path.png" id="2_df6nx"]
+
+[resource]
+script = ExtResource("1_sm7ft")
+id = "dirt_path"
+name = "Dirt Path"
+texture = ExtResource("2_df6nx")
+is_block = true

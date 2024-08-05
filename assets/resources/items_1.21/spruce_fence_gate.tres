@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_61rhv"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/spruce_fence_gate.png" id="2_0jyrw"]
+
+[resource]
+script = ExtResource("1_61rhv")
+id = "spruce_fence_gate"
+name = "Spruce Fence Gate"
+texture = ExtResource("2_0jyrw")
+is_block = true

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_gwihd"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/waxed_oxidized_copper_trapdoor.png" id="2_p1v4x"]
+
+[resource]
+script = ExtResource("1_gwihd")
+id = "waxed_oxidized_copper_trapdoor"
+name = "Waxed Oxidized Copper Trapdoor"
+texture = ExtResource("2_p1v4x")
+is_block = true

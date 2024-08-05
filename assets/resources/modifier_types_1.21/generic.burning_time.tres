@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ModifierType" load_steps=2 format=3 uid="uid://ch6ntyqhp0plr"]
+
+[ext_resource type="Script" path="res://resources/components/modifier_type.gd" id="1_w7rve"]
+
+[resource]
+script = ExtResource("1_w7rve")
+name = "Burning Time"
+id = "generic.burning_time"
+description = "Amount of time how long an entity remains on fire after being ignited as a multiplier. A value of 0 eliminates the burn time. Has no impact on the burning time increase when staying in fire."
+category = "Generic"
+min = 0.0
+max = 1024.0

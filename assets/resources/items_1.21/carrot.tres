@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_dk3bm"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/carrot.png" id="2_7suko"]
+
+[resource]
+script = ExtResource("1_dk3bm")
+id = "carrot"
+name = "Carrot"
+texture = ExtResource("2_7suko")
+is_block = false

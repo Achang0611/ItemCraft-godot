@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_7p2gi"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/experience_bottle.png" id="2_7i3de"]
+
+[resource]
+script = ExtResource("1_7p2gi")
+id = "experience_bottle"
+name = "Experience Bottle"
+texture = ExtResource("2_7i3de")
+is_block = false

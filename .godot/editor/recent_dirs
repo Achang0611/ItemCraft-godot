@@ -1,8 +1,10 @@
-/home/achang/GodotProjects/ItemCraft/
+res://resources
+res://
+res://assets/resources/
 res://scenes
+res://assets/resources/items_1.21
+/home/achang/GodotProjects/ItemCraft/
 /home/achang/GodotProjects/ItemCraft/exported/web
 /home/achang/GodotProjects/ItemCraft/exported/linux
 res://scripts
-res://items_1.21
 /home/achang/GodotProjects/ItemCraft/exported
-res://

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ModifierType" load_steps=2 format=3 uid="uid://dyyqd00snafq4"]
+
+[ext_resource type="Script" path="res://resources/components/modifier_type.gd" id="1_hd8qr"]
+
+[resource]
+script = ExtResource("1_hd8qr")
+name = "Max Health"
+id = "generic.max_health"
+description = "The maximum health of this mob (in half-hearts); determines the highest health they may be healed to. If the player is using this to summon a mob with high health, use this and the Health tag {Health:200.0f} for example. (Disabled in 1.17)"
+category = "Generic"
+min = 1.0
+max = 1024.0

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_i4uta"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/carrot_on_a_stick.png" id="2_lhi4s"]
+
+[resource]
+script = ExtResource("1_i4uta")
+id = "carrot_on_a_stick"
+name = "Carrot On A Stick"
+texture = ExtResource("2_lhi4s")
+is_block = false

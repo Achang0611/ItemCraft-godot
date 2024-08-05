@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_amtm7"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/lime_concrete_powder.png" id="2_71tok"]
+
+[resource]
+script = ExtResource("1_amtm7")
+id = "lime_concrete_powder"
+name = "Lime Concrete Powder"
+texture = ExtResource("2_71tok")
+is_block = true

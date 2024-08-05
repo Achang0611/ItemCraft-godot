@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_j5nt3"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/wet_sponge.png" id="2_x4sfr"]
+
+[resource]
+script = ExtResource("1_j5nt3")
+id = "wet_sponge"
+name = "Wet Sponge"
+texture = ExtResource("2_x4sfr")
+is_block = true

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_6yck3"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/disc_fragment_5.png" id="2_s6ec0"]
+
+[resource]
+script = ExtResource("1_6yck3")
+id = "disc_fragment_5"
+name = "Disc Fragment 5"
+texture = ExtResource("2_s6ec0")
+is_block = false

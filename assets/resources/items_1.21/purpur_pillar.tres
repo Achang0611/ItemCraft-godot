@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_vb87p"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/purpur_pillar.png" id="2_ucn1i"]
+
+[resource]
+script = ExtResource("1_vb87p")
+id = "purpur_pillar"
+name = "Purpur Pillar"
+texture = ExtResource("2_ucn1i")
+is_block = true

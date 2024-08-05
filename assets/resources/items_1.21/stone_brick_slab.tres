@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_xulvm"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/stone_brick_slab.png" id="2_47xli"]
+
+[resource]
+script = ExtResource("1_xulvm")
+id = "stone_brick_slab"
+name = "Stone Brick Slab"
+texture = ExtResource("2_47xli")
+is_block = true

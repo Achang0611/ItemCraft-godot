@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Enchantment" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://resources/components/enchantment.gd" id="1_ufbx8"]
+
+[resource]
+script = ExtResource("1_ufbx8")
+name = "Luck of the Sea"
+id = "luck_of_the_sea"
+level = 0
+description = "Increases rate of good loot (enchanting books, etc.)."
+category = "Fishing rod"
+max_level = 3

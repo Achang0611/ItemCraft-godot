@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_yre5b"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/exposed_cut_copper_slab.png" id="2_murwh"]
+
+[resource]
+script = ExtResource("1_yre5b")
+id = "exposed_cut_copper_slab"
+name = "Exposed Cut Copper Slab"
+texture = ExtResource("2_murwh")
+is_block = true

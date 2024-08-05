@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_mju7r"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/acacia_trapdoor.png" id="2_aevxi"]
+
+[resource]
+script = ExtResource("1_mju7r")
+id = "acacia_trapdoor"
+name = "Acacia Trapdoor"
+texture = ExtResource("2_aevxi")
+is_block = true

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_utve6"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/dark_prismarine_slab.png" id="2_wkddf"]
+
+[resource]
+script = ExtResource("1_utve6")
+id = "dark_prismarine_slab"
+name = "Dark Prismarine Slab"
+texture = ExtResource("2_wkddf")
+is_block = true

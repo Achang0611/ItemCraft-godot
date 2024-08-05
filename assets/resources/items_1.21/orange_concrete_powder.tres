@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_oqyq2"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/orange_concrete_powder.png" id="2_xtup8"]
+
+[resource]
+script = ExtResource("1_oqyq2")
+id = "orange_concrete_powder"
+name = "Orange Concrete Powder"
+texture = ExtResource("2_xtup8")
+is_block = true

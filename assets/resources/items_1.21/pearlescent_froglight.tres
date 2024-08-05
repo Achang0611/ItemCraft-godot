@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_74vly"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/pearlescent_froglight.png" id="2_4pkk4"]
+
+[resource]
+script = ExtResource("1_74vly")
+id = "pearlescent_froglight"
+name = "Pearlescent Froglight"
+texture = ExtResource("2_4pkk4")
+is_block = true

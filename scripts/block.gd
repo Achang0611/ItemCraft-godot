@@ -2,8 +2,6 @@ extends PanelContainer
 
 signal item_changed
 
-const block_list = preload("res://blocks_1.21.json").data
-
 @onready var item_container: MarginContainer = $VBoxContainer/ItemContainer
 @onready var item_texture: TextureRect = $VBoxContainer/ItemContainer/HBoxContainer/ItemTexture
 @onready var item_name: Label = $VBoxContainer/ItemContainer/HBoxContainer/ItemName
@@ -11,20 +9,20 @@ const block_list = preload("res://blocks_1.21.json").data
 @onready var mouse_check: Timer = $MouseCheck
 
 @export
-var item = "cobblestone" :
+var item: Item :
 	set(value):
 		item = value
 		show_item(value)
 		item_changed.emit()
 
 func _ready() -> void:
-	item_selector.show_item(func(id):
-		return block_list.has(id)
+	item_selector.show_item(func(item):
+		return item.is_block
 	)
 
-func show_item(id: String) -> void:
-	item_texture.texture = Items.get_item_texture(id)
-	item_name.text = Items.get_item_name(id)	
+func show_item(item: Item) -> void:
+	item_texture.texture = item.texture
+	item_name.text = item.name
 
 func _on_button_pressed() -> void:
 	queue_free()
@@ -45,9 +43,9 @@ func _on_margin_container_gui_input(event: InputEvent) -> void:
 		else:
 			open_selector()
 
-func _on_item_selector_select(item_id: String) -> void:
+func _on_item_selector_select(select_item: Item) -> void:
 	close_selector()
-	item = item_id
+	item = select_item
 
 func _on_mouse_check_timeout() -> void:
 	var mouse_pos = get_global_mouse_position()

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_v7gej"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/splash_potion.png" id="2_4oi4c"]
+
+[resource]
+script = ExtResource("1_v7gej")
+id = "splash_potion"
+name = "Splash Potion"
+texture = ExtResource("2_4oi4c")
+is_block = false

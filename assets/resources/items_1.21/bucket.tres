@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_g1mjt"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/bucket.png" id="2_vgjet"]
+
+[resource]
+script = ExtResource("1_g1mjt")
+id = "bucket"
+name = "Bucket"
+texture = ExtResource("2_vgjet")
+is_block = false

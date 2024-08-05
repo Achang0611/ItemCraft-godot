@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_a4t6v"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/nether_bricks.png" id="2_1if7i"]
+
+[resource]
+script = ExtResource("1_a4t6v")
+id = "nether_bricks"
+name = "Nether Bricks"
+texture = ExtResource("2_1if7i")
+is_block = true

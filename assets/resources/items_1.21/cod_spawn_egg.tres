@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_46ts5"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/cod_spawn_egg.png" id="2_aab50"]
+
+[resource]
+script = ExtResource("1_46ts5")
+id = "cod_spawn_egg"
+name = "Cod Spawn Egg"
+texture = ExtResource("2_aab50")
+is_block = false

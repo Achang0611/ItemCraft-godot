@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ModifierType" load_steps=2 format=3 uid="uid://dddwvqk80mh4h"]
+
+[ext_resource type="Script" path="res://resources/components/modifier_type.gd" id="1_jkaup"]
+
+[resource]
+script = ExtResource("1_jkaup")
+name = "Block Break Speed"
+id = "player.block_break_speed"
+description = "The speed the player can break blocks as a multiplier."
+category = "Player"
+min = 0.0
+max = 1024.0

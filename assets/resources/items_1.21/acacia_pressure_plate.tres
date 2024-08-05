@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_im71n"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/acacia_pressure_plate.png" id="2_j3ycb"]
+
+[resource]
+script = ExtResource("1_im71n")
+id = "acacia_pressure_plate"
+name = "Acacia Pressure Plate"
+texture = ExtResource("2_j3ycb")
+is_block = true

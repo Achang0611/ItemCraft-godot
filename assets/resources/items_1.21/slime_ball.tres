@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_q12m6"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/slime_ball.png" id="2_nbhqn"]
+
+[resource]
+script = ExtResource("1_q12m6")
+id = "slime_ball"
+name = "Slime Ball"
+texture = ExtResource("2_nbhqn")
+is_block = false

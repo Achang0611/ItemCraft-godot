@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_xi5r7"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/zombie_horse_spawn_egg.png" id="2_gc0xh"]
+
+[resource]
+script = ExtResource("1_xi5r7")
+id = "zombie_horse_spawn_egg"
+name = "Zombie Horse Spawn Egg"
+texture = ExtResource("2_gc0xh")
+is_block = false

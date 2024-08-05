@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_v65sn"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/stripped_oak_log.png" id="2_pv0eh"]
+
+[resource]
+script = ExtResource("1_v65sn")
+id = "stripped_oak_log"
+name = "Stripped Oak Log"
+texture = ExtResource("2_pv0eh")
+is_block = true

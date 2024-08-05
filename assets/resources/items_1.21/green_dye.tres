@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_uvjjs"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/green_dye.png" id="2_ckqmu"]
+
+[resource]
+script = ExtResource("1_uvjjs")
+id = "green_dye"
+name = "Green Dye"
+texture = ExtResource("2_ckqmu")
+is_block = false

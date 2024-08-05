@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_k1ac2"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/creeper_banner_pattern.png" id="2_d4ofp"]
+
+[resource]
+script = ExtResource("1_k1ac2")
+id = "creeper_banner_pattern"
+name = "Creeper Banner Pattern"
+texture = ExtResource("2_d4ofp")
+is_block = false

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_rubr0"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/purple_candle.png" id="2_btixm"]
+
+[resource]
+script = ExtResource("1_rubr0")
+id = "purple_candle"
+name = "Purple Candle"
+texture = ExtResource("2_btixm")
+is_block = true

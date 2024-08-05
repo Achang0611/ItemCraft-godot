@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Enchantment" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://resources/components/enchantment.gd" id="1_8rlan"]
+
+[resource]
+script = ExtResource("1_8rlan")
+name = "Quick Charge"
+id = "quick_charge"
+level = 0
+description = "Decreases crossbow charging time."
+category = "Crossbow"
+max_level = 3

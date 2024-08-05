@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Enchantment" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://resources/components/enchantment.gd" id="1_f4alh"]
+
+[resource]
+script = ExtResource("1_f4alh")
+name = "Fire Protection"
+id = "fire_protection"
+level = 0
+description = "Reduces fire damage and burn time. Mutually exclusive with other protections."
+category = "Armor"
+max_level = 4

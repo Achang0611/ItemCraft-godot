@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_lltvg"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/waxed_weathered_copper_door.png" id="2_8tign"]
+
+[resource]
+script = ExtResource("1_lltvg")
+id = "waxed_weathered_copper_door"
+name = "Waxed Weathered Copper Door"
+texture = ExtResource("2_8tign")
+is_block = true

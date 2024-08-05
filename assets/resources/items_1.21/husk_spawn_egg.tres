@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_nkvqd"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/husk_spawn_egg.png" id="2_f741s"]
+
+[resource]
+script = ExtResource("1_nkvqd")
+id = "husk_spawn_egg"
+name = "Husk Spawn Egg"
+texture = ExtResource("2_f741s")
+is_block = false

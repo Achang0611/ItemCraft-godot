@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_a06yo"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/end_rod.png" id="2_cogkt"]
+
+[resource]
+script = ExtResource("1_a06yo")
+id = "end_rod"
+name = "End Rod"
+texture = ExtResource("2_cogkt")
+is_block = true

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_bdw4m"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/detector_rail.png" id="2_8njpq"]
+
+[resource]
+script = ExtResource("1_bdw4m")
+id = "detector_rail"
+name = "Detector Rail"
+texture = ExtResource("2_8njpq")
+is_block = true

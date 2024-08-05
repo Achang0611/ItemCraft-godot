@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_mp4o8"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/writable_book.png" id="2_sjr65"]
+
+[resource]
+script = ExtResource("1_mp4o8")
+id = "writable_book"
+name = "Writable Book"
+texture = ExtResource("2_sjr65")
+is_block = false

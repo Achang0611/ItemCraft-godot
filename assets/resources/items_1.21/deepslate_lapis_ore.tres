@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_p5xe0"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/deepslate_lapis_ore.png" id="2_ry2rw"]
+
+[resource]
+script = ExtResource("1_p5xe0")
+id = "deepslate_lapis_ore"
+name = "Deepslate Lapis Ore"
+texture = ExtResource("2_ry2rw")
+is_block = false

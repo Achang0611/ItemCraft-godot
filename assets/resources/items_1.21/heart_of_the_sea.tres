@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_hy5rr"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/heart_of_the_sea.png" id="2_mi7wg"]
+
+[resource]
+script = ExtResource("1_hy5rr")
+id = "heart_of_the_sea"
+name = "Heart Of The Sea"
+texture = ExtResource("2_mi7wg")
+is_block = false

@@ -4,6 +4,7 @@
 [ext_resource type="Script" path="res://scripts/infomation_editor.gd" id="1_ngbbs"]
 
 [sub_resource type="SystemFont" id="SystemFont_2b86j"]
+subpixel_positioning = 0
 
 [sub_resource type="Theme" id="Theme_w0dy1"]
 default_font = SubResource("SystemFont_2b86j")

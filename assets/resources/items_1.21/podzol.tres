@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_b7eek"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/podzol.png" id="2_u14qb"]
+
+[resource]
+script = ExtResource("1_b7eek")
+id = "podzol"
+name = "Podzol"
+texture = ExtResource("2_u14qb")
+is_block = true

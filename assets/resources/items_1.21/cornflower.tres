@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_d5v7q"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/cornflower.png" id="2_lgujp"]
+
+[resource]
+script = ExtResource("1_d5v7q")
+id = "cornflower"
+name = "Cornflower"
+texture = ExtResource("2_lgujp")
+is_block = true

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_u5qil"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/armor_stand.png" id="2_sac7a"]
+
+[resource]
+script = ExtResource("1_u5qil")
+id = "armor_stand"
+name = "Armor Stand"
+texture = ExtResource("2_sac7a")
+is_block = false

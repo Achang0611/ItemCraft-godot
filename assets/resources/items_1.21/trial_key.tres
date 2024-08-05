@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_x2anc"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/trial_key.png" id="2_vic7l"]
+
+[resource]
+script = ExtResource("1_x2anc")
+id = "trial_key"
+name = "Trial Key"
+texture = ExtResource("2_vic7l")
+is_block = false

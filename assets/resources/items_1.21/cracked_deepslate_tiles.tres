@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_8q8au"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/cracked_deepslate_tiles.png" id="2_hncwa"]
+
+[resource]
+script = ExtResource("1_8q8au")
+id = "cracked_deepslate_tiles"
+name = "Cracked Deepslate Tiles"
+texture = ExtResource("2_hncwa")
+is_block = true

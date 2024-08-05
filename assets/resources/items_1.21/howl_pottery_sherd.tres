@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_fl2si"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/howl_pottery_sherd.png" id="2_y0cnv"]
+
+[resource]
+script = ExtResource("1_fl2si")
+id = "howl_pottery_sherd"
+name = "Howl Pottery Sherd"
+texture = ExtResource("2_y0cnv")
+is_block = false

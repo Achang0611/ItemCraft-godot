@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_ne2l4"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/mangrove_pressure_plate.png" id="2_gb0uj"]
+
+[resource]
+script = ExtResource("1_ne2l4")
+id = "mangrove_pressure_plate"
+name = "Mangrove Pressure Plate"
+texture = ExtResource("2_gb0uj")
+is_block = true

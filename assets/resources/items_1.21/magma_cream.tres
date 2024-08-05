@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_a3f7y"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/magma_cream.png" id="2_r3svb"]
+
+[resource]
+script = ExtResource("1_a3f7y")
+id = "magma_cream"
+name = "Magma Cream"
+texture = ExtResource("2_r3svb")
+is_block = false

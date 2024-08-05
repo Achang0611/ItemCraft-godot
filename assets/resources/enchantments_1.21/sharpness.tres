@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Enchantment" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://resources/components/enchantment.gd" id="1_f1art"]
+
+[resource]
+script = ExtResource("1_f1art")
+name = "Sharpness"
+id = "sharpness"
+level = 0
+description = "Increases melee damage."
+category = "Sword"
+max_level = 5

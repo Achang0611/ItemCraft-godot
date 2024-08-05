@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ModifierType" load_steps=2 format=3 uid="uid://c4n81dtdycvfr"]
+
+[ext_resource type="Script" path="res://resources/components/modifier_type.gd" id="1_avnl0"]
+
+[resource]
+script = ExtResource("1_avnl0")
+name = "Attack Knockback"
+id = "generic.attack_knockback"
+description = "Knockback applied to attacks. Applies only to mobs with physical attacks.[3]"
+category = "Generic"
+min = 0.0
+max = 5.0

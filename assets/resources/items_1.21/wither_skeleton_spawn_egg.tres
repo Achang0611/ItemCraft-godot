@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_o5ay8"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/wither_skeleton_spawn_egg.png" id="2_ilnh5"]
+
+[resource]
+script = ExtResource("1_o5ay8")
+id = "wither_skeleton_spawn_egg"
+name = "Wither Skeleton Spawn Egg"
+texture = ExtResource("2_ilnh5")
+is_block = false

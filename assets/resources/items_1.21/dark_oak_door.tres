@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_i4uln"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/dark_oak_door.png" id="2_gd4xv"]
+
+[resource]
+script = ExtResource("1_i4uln")
+id = "dark_oak_door"
+name = "Dark Oak Door"
+texture = ExtResource("2_gd4xv")
+is_block = true

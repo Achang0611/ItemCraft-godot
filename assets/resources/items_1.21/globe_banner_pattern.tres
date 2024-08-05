@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_yfk31"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/globe_banner_pattern.png" id="2_lnic0"]
+
+[resource]
+script = ExtResource("1_yfk31")
+id = "globe_banner_pattern"
+name = "Globe Banner Pattern"
+texture = ExtResource("2_lnic0")
+is_block = false

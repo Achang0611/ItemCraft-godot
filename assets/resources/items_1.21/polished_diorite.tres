@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_2vj0x"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/polished_diorite.png" id="2_oibtg"]
+
+[resource]
+script = ExtResource("1_2vj0x")
+id = "polished_diorite"
+name = "Polished Diorite"
+texture = ExtResource("2_oibtg")
+is_block = true

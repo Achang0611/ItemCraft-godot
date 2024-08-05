@@ -1,13 +1,49 @@
-[gd_scene load_steps=10 format=3 uid="uid://c3due2y2wg3aa"]
+[gd_scene load_steps=24 format=3 uid="uid://c3due2y2wg3aa"]
 
 [ext_resource type="PackedScene" uid="uid://d2uehm8xi422v" path="res://scenes/item_selector.tscn" id="1_uencb"]
+[ext_resource type="Script" path="res://resources/components/namespaced_id.gd" id="2_0452r"]
+[ext_resource type="Resource" uid="uid://cr1gqljcglp8j" path="res://assets/resources/operations_1.21/add_multiplied_total.tres" id="2_f0gxt"]
 [ext_resource type="Script" path="res://scripts/item_editor.gd" id="3_6hmie"]
-[ext_resource type="Texture2D" uid="uid://di7k82u8yjdpi" path="res://items_1.21/acacia_boat.png" id="4_2na5r"]
+[ext_resource type="Script" path="res://resources/components/modifier.gd" id="3_63y4t"]
+[ext_resource type="Texture2D" uid="uid://di7k82u8yjdpi" path="res://assets/images/item_textures_1.21/acacia_boat.png" id="4_2na5r"]
+[ext_resource type="Resource" uid="uid://dh2l3d7fknpso" path="res://assets/resources/slots_1.21/head.tres" id="4_6a7a8"]
+[ext_resource type="Resource" uid="uid://dyyqd00snafq4" path="res://assets/resources/modifier_types_1.21/generic.max_health.tres" id="5_6y3e3"]
 [ext_resource type="Script" path="res://scripts/command_text.gd" id="5_drmeu"]
 [ext_resource type="PackedScene" uid="uid://d33mamgmk24jj" path="res://scenes/infomation_editor.tscn" id="5_lnjvh"]
+[ext_resource type="Script" path="res://resources/components/attribute_modifiers.gd" id="6_rfirp"]
+[ext_resource type="Resource" uid="uid://fgii3lifuys8" path="res://assets/resources/enchantments_1.21/protection.tres" id="7_grv7x"]
 [ext_resource type="PackedScene" uid="uid://dt8ydm7h5sopf" path="res://scenes/attribute_editor.tscn" id="7_y4xxt"]
 [ext_resource type="PackedScene" uid="uid://dn1k36p0le431" path="res://scenes/enchantment_editor.tscn" id="8_5j54d"]
+[ext_resource type="Script" path="res://resources/components/enchantments.gd" id="8_em4bv"]
 [ext_resource type="PackedScene" uid="uid://cktr1h2w6vvqd" path="res://scenes/interact_editor.tscn" id="8_ihxqc"]
+[ext_resource type="Script" path="res://resources/components/item_components.gd" id="9_8etyv"]
+
+[sub_resource type="Resource" id="Resource_aqeki"]
+script = ExtResource("2_0452r")
+id = "4661370320434191610"
+
+[sub_resource type="Resource" id="Resource_1j41i"]
+script = ExtResource("3_63y4t")
+type = ExtResource("5_6y3e3")
+slot = ExtResource("4_6a7a8")
+id = SubResource("Resource_aqeki")
+amount = 999.0
+operation = ExtResource("2_f0gxt")
+
+[sub_resource type="Resource" id="Resource_vre4v"]
+script = ExtResource("6_rfirp")
+modifiers = Array[ExtResource("3_63y4t")]([SubResource("Resource_1j41i")])
+show_in_tooltip = false
+
+[sub_resource type="Resource" id="Resource_j6ost"]
+script = ExtResource("8_em4bv")
+levels = Array[Resource("res://resources/components/enchantment.gd")]([ExtResource("7_grv7x")])
+show_in_tooltip = false
+
+[sub_resource type="Resource" id="Resource_1810o"]
+script = ExtResource("9_8etyv")
+attribute_modifiers = SubResource("Resource_vre4v")
+enchantments = SubResource("Resource_j6ost")
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6kf0c"]
 
@@ -21,6 +57,7 @@ grow_horizontal = 2
 grow_vertical = 2
 focus_mode = 2
 script = ExtResource("3_6hmie")
+test = SubResource("Resource_1810o")
 
 [node name="ItemSelector" parent="ItemEditor" instance=ExtResource("1_uencb")]
 layout_mode = 2

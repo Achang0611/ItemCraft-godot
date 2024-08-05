@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_46xam"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/emerald_ore.png" id="2_imjcl"]
+
+[resource]
+script = ExtResource("1_46xam")
+id = "emerald_ore"
+name = "Emerald Ore"
+texture = ExtResource("2_imjcl")
+is_block = true

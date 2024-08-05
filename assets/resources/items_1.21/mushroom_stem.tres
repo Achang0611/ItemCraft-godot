@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_5j0ed"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/mushroom_stem.png" id="2_7nw24"]
+
+[resource]
+script = ExtResource("1_5j0ed")
+id = "mushroom_stem"
+name = "Mushroom Stem"
+texture = ExtResource("2_7nw24")
+is_block = true

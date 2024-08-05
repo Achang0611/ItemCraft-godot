@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Enchantment" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://resources/components/enchantment.gd" id="1_o4k8m"]
+
+[resource]
+script = ExtResource("1_o4k8m")
+name = "Impaling"
+id = "impaling"
+level = 0
+description = "Increases damage against aquatic mobs. In Bedrock Edition, increases damage against mobs in water or rain."
+category = "Trident"
+max_level = 5

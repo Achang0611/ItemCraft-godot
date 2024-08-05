@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_q4txg"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/horn_coral.png" id="2_cj2hv"]
+
+[resource]
+script = ExtResource("1_q4txg")
+id = "horn_coral"
+name = "Horn Coral"
+texture = ExtResource("2_cj2hv")
+is_block = true

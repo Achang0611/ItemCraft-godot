@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_knehy"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/campfire.png" id="2_5xa1j"]
+
+[resource]
+script = ExtResource("1_knehy")
+id = "campfire"
+name = "Campfire"
+texture = ExtResource("2_5xa1j")
+is_block = true

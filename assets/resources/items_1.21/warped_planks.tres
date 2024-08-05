@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_hxsyh"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/warped_planks.png" id="2_vyd5w"]
+
+[resource]
+script = ExtResource("1_hxsyh")
+id = "warped_planks"
+name = "Warped Planks"
+texture = ExtResource("2_vyd5w")
+is_block = true

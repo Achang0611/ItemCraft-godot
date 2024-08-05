@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_jk18u"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/music_disc_ward.png" id="2_fsqkq"]
+
+[resource]
+script = ExtResource("1_jk18u")
+id = "music_disc_ward"
+name = "Music Disc Ward"
+texture = ExtResource("2_fsqkq")
+is_block = false

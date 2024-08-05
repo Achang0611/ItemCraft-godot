@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_yj1gd"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/decorated_pot.png" id="2_601tx"]
+
+[resource]
+script = ExtResource("1_yj1gd")
+id = "decorated_pot"
+name = "Decorated Pot"
+texture = ExtResource("2_601tx")
+is_block = true

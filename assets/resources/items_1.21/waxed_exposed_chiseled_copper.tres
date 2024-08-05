@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_ejycc"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/waxed_exposed_chiseled_copper.png" id="2_y4368"]
+
+[resource]
+script = ExtResource("1_ejycc")
+id = "waxed_exposed_chiseled_copper"
+name = "Waxed Exposed Chiseled Copper"
+texture = ExtResource("2_y4368")
+is_block = true

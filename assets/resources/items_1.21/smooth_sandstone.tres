@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_xdxtf"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/smooth_sandstone.png" id="2_ob3ul"]
+
+[resource]
+script = ExtResource("1_xdxtf")
+id = "smooth_sandstone"
+name = "Smooth Sandstone"
+texture = ExtResource("2_ob3ul")
+is_block = true

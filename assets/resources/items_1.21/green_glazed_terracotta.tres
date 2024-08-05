@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_g3cka"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/green_glazed_terracotta.png" id="2_da5ul"]
+
+[resource]
+script = ExtResource("1_g3cka")
+id = "green_glazed_terracotta"
+name = "Green Glazed Terracotta"
+texture = ExtResource("2_da5ul")
+is_block = true

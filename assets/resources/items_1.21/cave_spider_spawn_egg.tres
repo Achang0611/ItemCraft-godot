@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_nk4ei"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/cave_spider_spawn_egg.png" id="2_vtak8"]
+
+[resource]
+script = ExtResource("1_nk4ei")
+id = "cave_spider_spawn_egg"
+name = "Cave Spider Spawn Egg"
+texture = ExtResource("2_vtak8")
+is_block = false

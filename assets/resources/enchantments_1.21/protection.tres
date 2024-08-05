@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Enchantment" load_steps=2 format=3 uid="uid://fgii3lifuys8"]
+
+[ext_resource type="Script" path="res://resources/components/enchantment.gd" id="1_f02vj"]
+
+[resource]
+script = ExtResource("1_f02vj")
+name = "Protection"
+id = "protection"
+level = 255
+description = "Reduces generic damage."
+category = "Armor"
+max_level = 4

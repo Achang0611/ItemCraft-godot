@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_mm2jq"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/spyglass.png" id="2_0op4o"]
+
+[resource]
+script = ExtResource("1_mm2jq")
+id = "spyglass"
+name = "Spyglass"
+texture = ExtResource("2_0op4o")
+is_block = false

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_05kto"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/rotten_flesh.png" id="2_bv0ml"]
+
+[resource]
+script = ExtResource("1_05kto")
+id = "rotten_flesh"
+name = "Rotten Flesh"
+texture = ExtResource("2_bv0ml")
+is_block = false

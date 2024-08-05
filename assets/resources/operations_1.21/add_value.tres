@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Operation" load_steps=2 format=3 uid="uid://722pkxuurjiq"]
+
+[ext_resource type="Script" path="res://resources/components/operation.gd" id="1_ld1se"]
+
+[resource]
+script = ExtResource("1_ld1se")
+name = "Number"
+id = "add_value"

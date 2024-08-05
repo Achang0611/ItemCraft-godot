@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_tt1ni"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/sculk_shrieker.png" id="2_ixjp2"]
+
+[resource]
+script = ExtResource("1_tt1ni")
+id = "sculk_shrieker"
+name = "Sculk Shrieker"
+texture = ExtResource("2_ixjp2")
+is_block = true

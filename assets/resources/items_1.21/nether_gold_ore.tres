@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_qbni3"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/nether_gold_ore.png" id="2_bbhap"]
+
+[resource]
+script = ExtResource("1_qbni3")
+id = "nether_gold_ore"
+name = "Nether Gold Ore"
+texture = ExtResource("2_bbhap")
+is_block = true

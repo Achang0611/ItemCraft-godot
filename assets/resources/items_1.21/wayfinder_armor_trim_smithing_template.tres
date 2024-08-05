@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_u66f6"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/wayfinder_armor_trim_smithing_template.png" id="2_qn0x0"]
+
+[resource]
+script = ExtResource("1_u66f6")
+id = "wayfinder_armor_trim_smithing_template"
+name = "Wayfinder Armor Trim Smithing Template"
+texture = ExtResource("2_qn0x0")
+is_block = false

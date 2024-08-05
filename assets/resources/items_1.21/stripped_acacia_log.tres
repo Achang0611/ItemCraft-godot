@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_fkujx"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/stripped_acacia_log.png" id="2_x6kvt"]
+
+[resource]
+script = ExtResource("1_fkujx")
+id = "stripped_acacia_log"
+name = "Stripped Acacia Log"
+texture = ExtResource("2_x6kvt")
+is_block = true

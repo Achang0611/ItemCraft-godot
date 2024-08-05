@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_nawol"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/orange_tulip.png" id="2_qyj8f"]
+
+[resource]
+script = ExtResource("1_nawol")
+id = "orange_tulip"
+name = "Orange Tulip"
+texture = ExtResource("2_qyj8f")
+is_block = true

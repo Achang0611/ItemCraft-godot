@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_novmu"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/clay_ball.png" id="2_5nyur"]
+
+[resource]
+script = ExtResource("1_novmu")
+id = "clay_ball"
+name = "Clay Ball"
+texture = ExtResource("2_5nyur")
+is_block = false

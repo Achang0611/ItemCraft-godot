@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Operation" load_steps=2 format=3 uid="uid://31gv87cdkr6"]
+
+[ext_resource type="Script" path="res://resources/components/operation.gd" id="1_s2w0o"]
+
+[resource]
+script = ExtResource("1_s2w0o")
+name = "Scalar"
+id = "add_multiplied_base"

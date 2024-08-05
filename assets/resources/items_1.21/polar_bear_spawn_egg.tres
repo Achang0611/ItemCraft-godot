@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_4dnv7"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/polar_bear_spawn_egg.png" id="2_eqdya"]
+
+[resource]
+script = ExtResource("1_4dnv7")
+id = "polar_bear_spawn_egg"
+name = "Polar Bear Spawn Egg"
+texture = ExtResource("2_eqdya")
+is_block = false

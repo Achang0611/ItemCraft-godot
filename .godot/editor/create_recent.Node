@@ -1,4 +1,6 @@
 Node
+ResourcePreloader
+TextureRect
 CenterContainer
 ReferenceRect
 VBoxContainer
@@ -10,6 +12,3 @@ Control
 Window
 PopupMenu
 PopupPanel
-Button
-TextureButton
-ResourcePreloader

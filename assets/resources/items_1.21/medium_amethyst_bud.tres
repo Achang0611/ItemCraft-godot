@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_frkn7"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/medium_amethyst_bud.png" id="2_rm2iq"]
+
+[resource]
+script = ExtResource("1_frkn7")
+id = "medium_amethyst_bud"
+name = "Medium Amethyst Bud"
+texture = ExtResource("2_rm2iq")
+is_block = true

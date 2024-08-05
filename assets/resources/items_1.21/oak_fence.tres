@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_hgudj"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/oak_fence.png" id="2_7phaq"]
+
+[resource]
+script = ExtResource("1_hgudj")
+id = "oak_fence"
+name = "Oak Fence"
+texture = ExtResource("2_7phaq")
+is_block = true

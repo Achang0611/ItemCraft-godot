@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_0bypt"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/cherry_planks.png" id="2_hydgl"]
+
+[resource]
+script = ExtResource("1_0bypt")
+id = "cherry_planks"
+name = "Cherry Planks"
+texture = ExtResource("2_hydgl")
+is_block = true

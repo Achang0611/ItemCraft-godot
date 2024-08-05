@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ModifierType" load_steps=2 format=3 uid="uid://dvyk2bgh1svqm"]
+
+[ext_resource type="Script" path="res://resources/components/modifier_type.gd" id="1_fcic3"]
+
+[resource]
+script = ExtResource("1_fcic3")
+name = "Movement Speed"
+id = "generic.movement_speed"
+description = "Movement speed is the speed at which entities can move, but this is not the actual speed value in blocks/second. The mob's actual speed in blocks/second is a bit over 20 times this value, but is affected by various conditions, such as the behavior it's following (e.g. idling, attacking or fleeing), being ridden (if a horse), sprinting, being led by a leash, and being under the effect of a Speed or Slowness potion. Baby mobs also have an additional speed multiplier on top of the base value."
+category = "Generic"
+min = 0.0
+max = 1024.0

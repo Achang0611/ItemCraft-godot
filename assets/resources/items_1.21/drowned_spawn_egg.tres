@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_hgdlx"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/drowned_spawn_egg.png" id="2_qovov"]
+
+[resource]
+script = ExtResource("1_hgdlx")
+id = "drowned_spawn_egg"
+name = "Drowned Spawn Egg"
+texture = ExtResource("2_qovov")
+is_block = false

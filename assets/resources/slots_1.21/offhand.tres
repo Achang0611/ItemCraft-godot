@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Slot" load_steps=2 format=3 uid="uid://b0mxhoalj7qy3"]
+
+[ext_resource type="Script" path="res://resources/components/slot.gd" id="1_tf2xg"]
+
+[resource]
+script = ExtResource("1_tf2xg")
+name = "Off Hand"
+id = "offhand"
+equivalent = Array[ExtResource("1_tf2xg")]([])

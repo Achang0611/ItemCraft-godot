@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_px6re"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/witch_spawn_egg.png" id="2_jdvuh"]
+
+[resource]
+script = ExtResource("1_px6re")
+id = "witch_spawn_egg"
+name = "Witch Spawn Egg"
+texture = ExtResource("2_jdvuh")
+is_block = false

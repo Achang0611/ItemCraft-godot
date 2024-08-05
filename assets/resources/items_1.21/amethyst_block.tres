@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_25qu6"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/amethyst_block.png" id="2_p5g0n"]
+
+[resource]
+script = ExtResource("1_25qu6")
+id = "amethyst_block"
+name = "Amethyst Block"
+texture = ExtResource("2_p5g0n")
+is_block = false

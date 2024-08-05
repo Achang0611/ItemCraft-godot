@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_yywj0"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/polished_andesite_stairs.png" id="2_8i4lf"]
+
+[resource]
+script = ExtResource("1_yywj0")
+id = "polished_andesite_stairs"
+name = "Polished Andesite Stairs"
+texture = ExtResource("2_8i4lf")
+is_block = true

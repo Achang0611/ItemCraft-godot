@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_i8uky"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/stripped_spruce_wood.png" id="2_3i7mi"]
+
+[resource]
+script = ExtResource("1_i8uky")
+id = "stripped_spruce_wood"
+name = "Stripped Spruce Wood"
+texture = ExtResource("2_3i7mi")
+is_block = true

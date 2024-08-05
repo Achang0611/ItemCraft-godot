@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_5cibc"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/acacia_log.png" id="2_y1qnf"]
+
+[resource]
+script = ExtResource("1_5cibc")
+id = "acacia_log"
+name = "Acacia Log"
+texture = ExtResource("2_y1qnf")
+is_block = true

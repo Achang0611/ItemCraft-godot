@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_xiuev"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/white_concrete.png" id="2_8x6wi"]
+
+[resource]
+script = ExtResource("1_xiuev")
+id = "white_concrete"
+name = "White Concrete"
+texture = ExtResource("2_8x6wi")
+is_block = true

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_05tqp"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/chiseled_stone_bricks.png" id="2_84jt0"]
+
+[resource]
+script = ExtResource("1_05tqp")
+id = "chiseled_stone_bricks"
+name = "Chiseled Stone Bricks"
+texture = ExtResource("2_84jt0")
+is_block = true

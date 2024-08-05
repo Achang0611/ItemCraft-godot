@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_jphwm"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/stripped_jungle_wood.png" id="2_e27b2"]
+
+[resource]
+script = ExtResource("1_jphwm")
+id = "stripped_jungle_wood"
+name = "Stripped Jungle Wood"
+texture = ExtResource("2_e27b2")
+is_block = true

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_721hw"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/stripped_crimson_stem.png" id="2_7wehp"]
+
+[resource]
+script = ExtResource("1_721hw")
+id = "stripped_crimson_stem"
+name = "Stripped Crimson Stem"
+texture = ExtResource("2_7wehp")
+is_block = true

@@ -37,7 +37,7 @@ func block_update(category: String, blocks: Variant) -> void:
 	for block in blocks:
 		if unique_blocks.has(block):
 			continue
-		unique_blocks.append(block)
+		unique_blocks.append(block.id)
 	
 	component_update(category, "blocks", unique_blocks)
 

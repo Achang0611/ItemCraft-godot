@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_ld8le"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/birch_trapdoor.png" id="2_ldnfs"]
+
+[resource]
+script = ExtResource("1_ld8le")
+id = "birch_trapdoor"
+name = "Birch Trapdoor"
+texture = ExtResource("2_ldnfs")
+is_block = true

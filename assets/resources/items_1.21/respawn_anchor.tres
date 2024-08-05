@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_s7d1b"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/respawn_anchor.png" id="2_cddq2"]
+
+[resource]
+script = ExtResource("1_s7d1b")
+id = "respawn_anchor"
+name = "Respawn Anchor"
+texture = ExtResource("2_cddq2")
+is_block = true

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_7q6dm"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/cooked_porkchop.png" id="2_6odd1"]
+
+[resource]
+script = ExtResource("1_7q6dm")
+id = "cooked_porkchop"
+name = "Cooked Porkchop"
+texture = ExtResource("2_6odd1")
+is_block = false

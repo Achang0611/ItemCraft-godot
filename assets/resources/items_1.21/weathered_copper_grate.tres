@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_dxl2o"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/weathered_copper_grate.png" id="2_n56l2"]
+
+[resource]
+script = ExtResource("1_dxl2o")
+id = "weathered_copper_grate"
+name = "Weathered Copper Grate"
+texture = ExtResource("2_n56l2")
+is_block = true

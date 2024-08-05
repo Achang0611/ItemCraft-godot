@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_v35w4"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/diamond_horse_armor.png" id="2_ye6gs"]
+
+[resource]
+script = ExtResource("1_v35w4")
+id = "diamond_horse_armor"
+name = "Diamond Horse Armor"
+texture = ExtResource("2_ye6gs")
+is_block = false

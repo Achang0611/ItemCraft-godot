@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_ysejd"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/polished_deepslate_slab.png" id="2_sit3x"]
+
+[resource]
+script = ExtResource("1_ysejd")
+id = "polished_deepslate_slab"
+name = "Polished Deepslate Slab"
+texture = ExtResource("2_sit3x")
+is_block = true

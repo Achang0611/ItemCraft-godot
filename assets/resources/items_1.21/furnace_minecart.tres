@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_vafdb"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/furnace_minecart.png" id="2_ewu7i"]
+
+[resource]
+script = ExtResource("1_vafdb")
+id = "furnace_minecart"
+name = "Furnace Minecart"
+texture = ExtResource("2_ewu7i")
+is_block = false

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_g5y3k"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/cyan_shulker_box.png" id="2_adrjb"]
+
+[resource]
+script = ExtResource("1_g5y3k")
+id = "cyan_shulker_box"
+name = "Cyan Shulker Box"
+texture = ExtResource("2_adrjb")
+is_block = true

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_jw01q"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/bee_nest.png" id="2_s6l3d"]
+
+[resource]
+script = ExtResource("1_jw01q")
+id = "bee_nest"
+name = "Bee Nest"
+texture = ExtResource("2_s6l3d")
+is_block = true

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_fu7p5"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/golden_chestplate.png" id="2_o0emp"]
+
+[resource]
+script = ExtResource("1_fu7p5")
+id = "golden_chestplate"
+name = "Golden Chestplate"
+texture = ExtResource("2_o0emp")
+is_block = false

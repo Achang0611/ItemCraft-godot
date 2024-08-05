@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_vm2rg"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/mace.png" id="2_7u7ht"]
+
+[resource]
+script = ExtResource("1_vm2rg")
+id = "mace"
+name = "Mace"
+texture = ExtResource("2_7u7ht")
+is_block = false

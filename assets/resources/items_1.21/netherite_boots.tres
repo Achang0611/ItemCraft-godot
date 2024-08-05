@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_gk8r4"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/netherite_boots.png" id="2_hqsri"]
+
+[resource]
+script = ExtResource("1_gk8r4")
+id = "netherite_boots"
+name = "Netherite Boots"
+texture = ExtResource("2_hqsri")
+is_block = false

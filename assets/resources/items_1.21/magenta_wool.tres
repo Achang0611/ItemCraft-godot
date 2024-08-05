@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_7gld0"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/magenta_wool.png" id="2_de5gg"]
+
+[resource]
+script = ExtResource("1_7gld0")
+id = "magenta_wool"
+name = "Magenta Wool"
+texture = ExtResource("2_de5gg")
+is_block = true

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_85db5"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/glow_squid_spawn_egg.png" id="2_wej5h"]
+
+[resource]
+script = ExtResource("1_85db5")
+id = "glow_squid_spawn_egg"
+name = "Glow Squid Spawn Egg"
+texture = ExtResource("2_wej5h")
+is_block = false

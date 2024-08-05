@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_v0qbg"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/vex_spawn_egg.png" id="2_0l146"]
+
+[resource]
+script = ExtResource("1_v0qbg")
+id = "vex_spawn_egg"
+name = "Vex Spawn Egg"
+texture = ExtResource("2_0l146")
+is_block = false

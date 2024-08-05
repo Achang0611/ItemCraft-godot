@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_xu6qq"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/vex_armor_trim_smithing_template.png" id="2_3h2m6"]
+
+[resource]
+script = ExtResource("1_xu6qq")
+id = "vex_armor_trim_smithing_template"
+name = "Vex Armor Trim Smithing Template"
+texture = ExtResource("2_3h2m6")
+is_block = false

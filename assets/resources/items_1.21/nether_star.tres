@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_gq0hm"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/nether_star.png" id="2_la6gu"]
+
+[resource]
+script = ExtResource("1_gq0hm")
+id = "nether_star"
+name = "Nether Star"
+texture = ExtResource("2_la6gu")
+is_block = false

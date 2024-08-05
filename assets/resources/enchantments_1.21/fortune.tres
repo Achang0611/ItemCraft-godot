@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Enchantment" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://resources/components/enchantment.gd" id="1_yffm5"]
+
+[resource]
+script = ExtResource("1_yffm5")
+name = "Fortune"
+id = "fortune"
+level = 0
+description = "Increases the amount of block drops."
+category = "Pickaxe Shovel Axe Hoe Shears"
+max_level = 3

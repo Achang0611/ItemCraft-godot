@@ -1,9 +1,9 @@
 extends VBoxContainer
 
-signal update(blocks)
+signal update(blocks: Array[Item])
 signal toggled_tooltip(toggle_on)
 
-const BLOCK = preload("res://scenes/block.tscn")
+const Block = preload("res://scenes/block.tscn")
 
 @onready var hide_tooltip_button: Button = $Label/HideTooltipButton
 @onready var accepted_blocks: VBoxContainer = $ScrollContainer/AcceptedBlocks
@@ -29,13 +29,13 @@ func _update():
 func _on_hide_place_button_pressed() -> void:
 	hide_tooltip = not hide_tooltip
 
-func add_block(id: String) -> void:
-	var block = BLOCK.instantiate()
+func add_block(item: Item) -> void:
+	var block = Block.instantiate()
 	block.item_changed.connect(_update)
 	block.tree_exited.connect(_update)
 	accepted_blocks.add_child(block)
-	block.item = id
+	block.item = item
 
 func _on_add_block_pressed() -> void:
-	add_block("cobblestone")
+	add_block(Items.get_item("cobblestone"))
 	_update()

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_b1108"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/infested_deepslate.png" id="2_ff1eb"]
+
+[resource]
+script = ExtResource("1_b1108")
+id = "infested_deepslate"
+name = "Infested Deepslate"
+texture = ExtResource("2_ff1eb")
+is_block = true

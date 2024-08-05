@@ -44,11 +44,14 @@ func generate_command():
 	
 	command_text.text = command
 
-func select(item_id):
-	item_button.icon = Items.get_item_texture(item_id)
-	update_item_config("item", item_id)
+func select(item: Item):
+	item_button.icon = item.texture
+	update_item_config("item", item.id)
 	item_selector.visible = false
 	item_edit.visible = true
+
+@export
+var test: ItemComponents
 
 func _ready() -> void:
 	generate_command()

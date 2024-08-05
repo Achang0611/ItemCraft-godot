@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Enchantment" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://resources/components/enchantment.gd" id="1_yryx4"]
+
+[resource]
+script = ExtResource("1_yryx4")
+name = "Wind Burst"
+id = "wind_burst"
+level = 0
+description = "Emits a burst of wind (like that of a wind charge) upon executing a mace smash attack on an entity, launching the attacker upward. It can be used to chain smash attacks together, and the strength of the launch increases per level."
+category = "Mace"
+max_level = 3

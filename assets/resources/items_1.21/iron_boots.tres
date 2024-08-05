@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_u3km5"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/iron_boots.png" id="2_lbtfi"]
+
+[resource]
+script = ExtResource("1_u3km5")
+id = "iron_boots"
+name = "Iron Boots"
+texture = ExtResource("2_lbtfi")
+is_block = false

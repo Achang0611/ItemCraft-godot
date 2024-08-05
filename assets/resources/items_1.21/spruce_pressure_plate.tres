@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_0un7i"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/spruce_pressure_plate.png" id="2_1j8os"]
+
+[resource]
+script = ExtResource("1_0un7i")
+id = "spruce_pressure_plate"
+name = "Spruce Pressure Plate"
+texture = ExtResource("2_1j8os")
+is_block = true

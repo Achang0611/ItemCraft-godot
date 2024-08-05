@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Enchantment" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://resources/components/enchantment.gd" id="1_ssu1h"]
+
+[resource]
+script = ExtResource("1_ssu1h")
+name = "Riptide"
+id = "riptide"
+level = 0
+description = "Trident launches player with itself when thrown while in water or rain."
+category = "Trident"
+max_level = 3

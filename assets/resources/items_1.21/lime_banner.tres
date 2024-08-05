@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_djifq"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/lime_banner.png" id="2_if0tm"]
+
+[resource]
+script = ExtResource("1_djifq")
+id = "lime_banner"
+name = "Lime Banner"
+texture = ExtResource("2_if0tm")
+is_block = true

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_3dnqo"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/white_dye.png" id="2_q6cm8"]
+
+[resource]
+script = ExtResource("1_3dnqo")
+id = "white_dye"
+name = "White Dye"
+texture = ExtResource("2_q6cm8")
+is_block = false

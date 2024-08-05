@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_ol4op"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/flowering_azalea.png" id="2_tqfal"]
+
+[resource]
+script = ExtResource("1_ol4op")
+id = "flowering_azalea"
+name = "Flowering Azalea"
+texture = ExtResource("2_tqfal")
+is_block = true

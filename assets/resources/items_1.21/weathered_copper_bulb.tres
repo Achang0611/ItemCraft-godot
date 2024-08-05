@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_n0vwq"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/weathered_copper_bulb.png" id="2_ykh6p"]
+
+[resource]
+script = ExtResource("1_n0vwq")
+id = "weathered_copper_bulb"
+name = "Weathered Copper Bulb"
+texture = ExtResource("2_ykh6p")
+is_block = true

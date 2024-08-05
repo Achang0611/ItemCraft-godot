@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_rb5m1"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/prismarine_shard.png" id="2_dv3vp"]
+
+[resource]
+script = ExtResource("1_rb5m1")
+id = "prismarine_shard"
+name = "Prismarine Shard"
+texture = ExtResource("2_dv3vp")
+is_block = false

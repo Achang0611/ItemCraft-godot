@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_6r7lk"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/big_dripleaf.png" id="2_bph6s"]
+
+[resource]
+script = ExtResource("1_6r7lk")
+id = "big_dripleaf"
+name = "Big Dripleaf"
+texture = ExtResource("2_bph6s")
+is_block = true

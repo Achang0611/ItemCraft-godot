@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_5b2c7"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/netherite_shovel.png" id="2_wtmkm"]
+
+[resource]
+script = ExtResource("1_5b2c7")
+id = "netherite_shovel"
+name = "Netherite Shovel"
+texture = ExtResource("2_wtmkm")
+is_block = false

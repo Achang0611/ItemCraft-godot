@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://resources/item.gd" id="1_dk6ll"]
+[ext_resource type="Texture2D" path="res://assets/images/item_textures_1.21/honey_block.png" id="2_skyi5"]
+
+[resource]
+script = ExtResource("1_dk6ll")
+id = "honey_block"
+name = "Honey Block"
+texture = ExtResource("2_skyi5")
+is_block = true
