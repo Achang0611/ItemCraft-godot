@@ -1,14 +1,40 @@
-[gd_scene load_steps=5 format=3 uid="uid://d33mamgmk24jj"]
+[gd_scene load_steps=21 format=3 uid="uid://d33mamgmk24jj"]
 
 [ext_resource type="Script" path="res://scripts/entity_selector.gd" id="1_8adqj"]
 [ext_resource type="Script" path="res://scripts/infomation_editor.gd" id="1_ngbbs"]
-
-[sub_resource type="SystemFont" id="SystemFont_2b86j"]
-subpixel_positioning = 0
+[ext_resource type="Resource" uid="uid://bocmurbrbnh30" path="res://assets/resources/text_colors_1.21/aqua.tres" id="3_k48kk"]
+[ext_resource type="Resource" uid="uid://cgrjgysuf05td" path="res://assets/resources/text_colors_1.21/black.tres" id="4_7mmiq"]
+[ext_resource type="Resource" uid="uid://cbn7nbypx7dtp" path="res://assets/resources/text_colors_1.21/blue.tres" id="5_xjhxg"]
+[ext_resource type="Resource" uid="uid://qtnyyninpg0p" path="res://assets/resources/text_colors_1.21/dark_aqua.tres" id="6_j4all"]
+[ext_resource type="Resource" uid="uid://chxyffivd4dw5" path="res://assets/resources/text_colors_1.21/dark_blue.tres" id="7_ygviy"]
+[ext_resource type="Resource" uid="uid://bmacua4as77db" path="res://assets/resources/text_colors_1.21/dark_gray.tres" id="8_8cpdd"]
+[ext_resource type="Resource" uid="uid://b03w6waay2oeo" path="res://assets/resources/text_colors_1.21/dark_green.tres" id="9_5wvxx"]
+[ext_resource type="Resource" uid="uid://bbwb6bbr1ibsm" path="res://assets/resources/text_colors_1.21/dark_purple.tres" id="10_xvsmi"]
+[ext_resource type="Resource" uid="uid://j506svk168gk" path="res://assets/resources/text_colors_1.21/dark_red.tres" id="11_smokk"]
+[ext_resource type="Resource" uid="uid://h1ysbxulxcw0" path="res://assets/resources/text_colors_1.21/gold.tres" id="12_q2wdp"]
+[ext_resource type="Resource" uid="uid://bucjgqowupftc" path="res://assets/resources/text_colors_1.21/gray.tres" id="13_7vvhf"]
+[ext_resource type="Resource" uid="uid://xe88egobbfsk" path="res://assets/resources/text_colors_1.21/green.tres" id="14_rtydr"]
+[ext_resource type="Resource" uid="uid://cji0oqppdod8" path="res://assets/resources/text_colors_1.21/light_purple.tres" id="15_nm12k"]
+[ext_resource type="Resource" uid="uid://cowtruww0mr71" path="res://assets/resources/text_colors_1.21/red.tres" id="16_vf8me"]
+[ext_resource type="Resource" uid="uid://cipdrqxqrb7w" path="res://assets/resources/text_colors_1.21/white.tres" id="17_xswfj"]
+[ext_resource type="Resource" uid="uid://5g3k6nvvtsiu" path="res://assets/resources/text_colors_1.21/yellow.tres" id="18_g85ec"]
 
 [sub_resource type="Theme" id="Theme_w0dy1"]
-default_font = SubResource("SystemFont_2b86j")
-default_font_size = 32
+
+[sub_resource type="GDScript" id="GDScript_fnwje"]
+script/source = "extends ResourcePreloader
+
+func get_text_colors() -> Array[TextColor]:
+	var output: Array[TextColor] = []
+	output.assign(resources[1])
+	return output
+
+func find_text_color(code: String) -> TextColor:
+	for text_color in get_text_colors():
+		if text_color.color_code == code:
+			return text_color
+	return null
+"
 
 [node name="Infomation" type="VBoxContainer"]
 anchors_preset = 15
@@ -35,7 +61,6 @@ alignment = 1
 [node name="EntitySelector" type="OptionButton" parent="HBoxContainer3"]
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_font_sizes/font_size = 32
 alignment = 1
 item_count = 7
 selected = 3
@@ -58,7 +83,6 @@ script = ExtResource("1_8adqj")
 [node name="PlayerName" type="LineEdit" parent="HBoxContainer3"]
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_font_sizes/font_size = 32
 placeholder_text = "Player name"
 alignment = 1
 editable = false
@@ -115,6 +139,10 @@ mouse_filter = 2
 bbcode_enabled = true
 fit_content = true
 autowrap_mode = 0
+
+[node name="TextColorPreloader" type="ResourcePreloader" parent="."]
+resources = [PackedStringArray("aqua", "black", "blue", "dark_aqua", "dark_blue", "dark_gray", "dark_green", "dark_purple", "dark_red", "gold", "gray", "green", "light_purple", "red", "white", "yellow"), [ExtResource("3_k48kk"), ExtResource("4_7mmiq"), ExtResource("5_xjhxg"), ExtResource("6_j4all"), ExtResource("7_ygviy"), ExtResource("8_8cpdd"), ExtResource("9_5wvxx"), ExtResource("10_xvsmi"), ExtResource("11_smokk"), ExtResource("12_q2wdp"), ExtResource("13_7vvhf"), ExtResource("14_rtydr"), ExtResource("15_nm12k"), ExtResource("16_vf8me"), ExtResource("17_xswfj"), ExtResource("18_g85ec")]]
+script = SubResource("GDScript_fnwje")
 
 [connection signal="value_changed" from="HBoxContainer3/Count" to="." method="_on_count_value_changed"]
 [connection signal="item_selected" from="HBoxContainer3/EntitySelector" to="HBoxContainer3/EntitySelector" method="_on_item_selected"]

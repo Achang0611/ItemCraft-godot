@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="TextColor" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="TextColor" load_steps=2 format=3 uid="uid://cbn7nbypx7dtp"]
 
 [ext_resource type="Script" path="res://resources/components/text_color.gd" id="1_fhauy"]
 
@@ -6,3 +6,5 @@
 script = ExtResource("1_fhauy")
 name = "Blue"
 id = "blue"
+color = Color(0.333333, 0.333333, 1, 1)
+color_code = "9"

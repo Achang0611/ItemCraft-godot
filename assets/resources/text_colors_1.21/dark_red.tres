@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="TextColor" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="TextColor" load_steps=2 format=3 uid="uid://j506svk168gk"]
 
 [ext_resource type="Script" path="res://resources/components/text_color.gd" id="1_v51yt"]
 
@@ -6,3 +6,5 @@
 script = ExtResource("1_v51yt")
 name = "Dark Red"
 id = "dark_red"
+color = Color(0.666667, 0, 0, 1)
+color_code = "4"

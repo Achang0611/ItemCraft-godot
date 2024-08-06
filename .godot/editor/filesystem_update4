@@ -1,2 +1,2 @@
 res://scenes/main.tscn
-res://scripts/item_editor.gd
+res://scenes/infomation_editor.tscn

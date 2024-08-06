@@ -32,6 +32,7 @@ window/stretch/aspect="expand"
 [gui]
 
 theme/default_theme_scale=3.0
+theme/custom_font="res://assets/fonts/Noto_Sans_TC/static/NotoSansTC-SemiBold.ttf"
 timers/tooltip_delay_sec=0.0
 
 [input]

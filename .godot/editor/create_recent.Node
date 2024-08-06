@@ -1,5 +1,6 @@
-Node
+RichTextLabel
 ResourcePreloader
+Node
 TextureRect
 CenterContainer
 ReferenceRect

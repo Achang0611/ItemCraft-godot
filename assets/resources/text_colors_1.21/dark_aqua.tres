@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="TextColor" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="TextColor" load_steps=2 format=3 uid="uid://qtnyyninpg0p"]
 
 [ext_resource type="Script" path="res://resources/components/text_color.gd" id="1_0phfq"]
 
@@ -6,3 +6,5 @@
 script = ExtResource("1_0phfq")
 name = "Dark Aqua"
 id = "dark_aqua"
+color = Color(0, 0.666667, 0.666667, 1)
+color_code = "3"
