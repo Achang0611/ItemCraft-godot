@@ -1,10 +1,10 @@
 # ItemCraft
 
-> :warning:
+> :hammer_and_wrench:
 > 
-> **ItemCraft** is currently paused in its development, with plans to transition to a web-based version.
-> 
-> The new version might be developed using **React**, **Vue**, or even **Electron** to support desktop applications.
+> The new version of [ItemCraft](https://github.com/Achang0611/ItemCraft/tree/main) is now available on the web.
+>
+> It is still under development, and some features are not yet fully implemented.
 
 ItemCraft is a Minecraft `give` command generator created using the **Godot** game engine. It allows users to customize items with a graphical interface by adjusting item properties, custom names, lore, enchantments, and more. The program then generates the corresponding command, enabling users to easily create items in Minecraft.
 
